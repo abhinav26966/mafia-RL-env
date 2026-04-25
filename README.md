@@ -47,13 +47,25 @@ demo/              # transcripts + plots for the writeup
 docs/              # architecture, reward design, training notes, API deltas
 ```
 
-## Links (filled in as we ship)
+## Links
 
-- HF Space: _TBD_
-- Training notebook (Colab): _TBD_
-- 90-second video: _TBD_
+- **HF Space (live):** [huggingface.co/spaces/abhinav2696/werewolf_env](https://huggingface.co/spaces/abhinav2696/werewolf_env)
+- **Direct API:** `https://abhinav2696-werewolf-env.hf.space` — `/reset`, `/step`, `/state`, `/schema`, `/health`, WebSocket `/ws`
+- **GitHub:** [github.com/abhinav26966/mafia-RL-env](https://github.com/abhinav26966/mafia-RL-env)
+- Training notebook (Colab): _TBD — Phase 4_
+- 90-second video: _TBD — Phase 5_
 - Plots: see `demo/plots/`
 - Transcripts: see `demo/transcripts/`
+
+### Connect from Python
+
+```python
+from werewolf_env import WerewolfEnv, WerewolfAction
+
+with WerewolfEnv(base_url="https://abhinav2696-werewolf-env.hf.space").sync() as env:
+    result = env.reset(seed=2)
+    print(result.observation.role, result.observation.phase)
+```
 
 ## License
 
