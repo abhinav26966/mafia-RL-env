@@ -17,9 +17,26 @@ Notebook usage:
 from __future__ import annotations
 
 import os
+import sys as _sys
+from unittest.mock import MagicMock as _MagicMock
 
 # IMPORTANT: set BEFORE importing unsloth, per Unsloth memory-efficient RL guide
 os.environ.setdefault("UNSLOTH_VLLM_STANDBY", "1")
+
+# Stub out mergekit BEFORE any TRL import.
+# TRL >= 0.20's grpo_trainer module unconditionally imports mergekit. Recent
+# mergekit versions define Pydantic models with raw `torch.Tensor` fields,
+# which fails to generate a schema under pydantic >= 2.12. We don't use
+# mergekit's LoRA-merge feature — only the import statement has to succeed.
+# Pre-registering MagicMocks satisfies any `import mergekit.X` or
+# `from mergekit.X import Y` in TRL's code.
+for _mod in [
+    "mergekit", "mergekit.config", "mergekit.merge", "mergekit.options",
+    "mergekit.io", "mergekit.architecture", "mergekit.graph",
+    "mergekit.merge_methods", "mergekit.scripts", "mergekit.tokenizer",
+    "mergekit.plan", "mergekit.common",
+]:
+    _sys.modules.setdefault(_mod, _MagicMock())
 
 
 # ── Compute-tier defaults ────────────────────────────────────────────────────

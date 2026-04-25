@@ -24,8 +24,15 @@ accelerate>=0.34
 peft>=0.12
 transformers>=4.45
 # mergekit is imported by trl.trainer.grpo_trainer (LoRA adapter merging path).
-# Required even if we don't use the merge feature, because the import is unconditional.
+# Recent mergekit versions are incompatible with pydantic >= 2.12 (raw
+# torch.Tensor fields fail Pydantic v2 schema generation). We stub mergekit
+# in training/train_grpo.py at import time, so we don't actually need the
+# package — but installing an old version doesn't hurt as a fallback.
 mergekit
+# Pin pydantic below 2.12 so any package that DID install mergekit cleanly
+# (without the schema error) keeps working. openenv-core / fastapi / trl
+# all work fine on 2.10/2.11.
+pydantic>=2.10,<2.12
 
 # Tracking + plotting
 trackio
