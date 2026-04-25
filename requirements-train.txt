@@ -9,46 +9,36 @@
 # file via `pip install -r requirements-train.txt` should add packages on top
 # of Colab's pre-installed torch.
 #
-# Recommended Colab install order (to avoid resolver thrash):
-#   !pip install --upgrade pip
-#   !pip install "unsloth[colab-new] @ git+https://github.com/unslothai/unsloth.git"
-#   !pip install --no-deps "trl>=0.20" "peft>=0.12"
-#   !pip install -r requirements-train.txt
-#   !pip install -e .  # installs werewolf_env client
+# Only the THREE critical pins below are hard. Everything else is loose so
+# pip can resolve mergekit, accelerate, datasets, etc. without conflict.
+# Past pinning experiments showed:
+#   - transformers 5.x breaks Unsloth + TRL 0.20 (Trainer source-edit regex)
+#   - pydantic 2.12 breaks mergekit (raw torch.Tensor in pydantic schemas)
+#   - trl 0.21+ may or may not match — 0.20 is what we tested with
 # ───────────────────────────────────────────────────────────────────────────
 
-# Core training libs — only the conflict-prone ones are hard-pinned.
-# Loosen these only after testing; transformers 5.x and pydantic 2.12 break
-# Unsloth + TRL 0.20 in confusing ways.
-trl==0.20.0
-datasets>=2.18,<3.0
-accelerate>=1.0,<2.0          # mergekit needs >=1.1; pip resolves at install
-peft>=0.12,<0.14
+# Hard pins — needed for known-stable behavior
 transformers==4.46.3
-# mergekit is imported by trl.trainer.grpo_trainer (LoRA adapter merging path).
-# Recent mergekit versions are incompatible with pydantic >= 2.12 (raw
-# torch.Tensor fields fail Pydantic v2 schema generation). We stub mergekit
-# in training/train_grpo.py at import time, so we don't actually need the
-# package — but installing an old version doesn't hurt as a fallback.
-mergekit
-# Pin pydantic explicitly — 2.12+ breaks mergekit's torch.Tensor schemas,
-# 2.11 breaks some internal pydantic calls in our path. 2.10.6 is verified.
+trl==0.20.0
 pydantic==2.10.6
 
-# Tracking + plotting
+# Soft requirements — let pip resolve
+datasets
+accelerate
+peft
+mergekit
+huggingface-hub
+
+# Tracking / plotting (also soft)
 trackio
-matplotlib>=3.8
-pandas>=2.0
-seaborn>=0.13
+matplotlib
+pandas
+seaborn
 
-# HF infra
-huggingface-hub>=0.24
+# OpenEnv client (this repo) — installed via `pip install -e .` separately
+# openenv-core is a transitive dep through werewolf_env's pyproject.toml
 
-# Inference / serving used by GRPOTrainer rollouts
-# vllm and unsloth are intentionally installed separately via Colab cells
+# vllm and unsloth are intentionally NOT here — install via Colab cells:
+#   pip install "unsloth[colab-new] @ git+https://github.com/unslothai/unsloth.git"
+#   pip install vllm
 # (their CUDA/torch compat is fragile across runtime versions).
-# vllm
-# unsloth
-
-# Env client (this repo)
-openenv-core[core]>=0.2.2
