@@ -1,0 +1,4921 @@
+[
+  {
+    "game_idx": 0,
+    "winner": "villager",
+    "end_day": 1,
+    "steps": 10,
+    "roles": {
+      "0": "villager",
+      "1": "seer",
+      "2": "villager",
+      "3": "villager",
+      "4": "werewolf"
+    },
+    "alive_at_end": [
+      0,
+      1,
+      3
+    ],
+    "rewards_per_seat": {
+      "0": {
+        "outcome": 1.0,
+        "calibration": 1.0,
+        "survival": 1.0,
+        "format": 1.0
+      },
+      "1": {
+        "outcome": 1.0,
+        "calibration": 1.0,
+        "survival": 1.0,
+        "format": 1.0
+      },
+      "2": {
+        "outcome": 1.0,
+        "calibration": 0.5,
+        "survival": 0.25,
+        "format": 1.0
+      },
+      "3": {
+        "outcome": 1.0,
+        "calibration": 1.0,
+        "survival": 1.0,
+        "format": 1.0
+      },
+      "4": {
+        "outcome": 0.0,
+        "calibration": 1.0,
+        "survival": 0.25,
+        "format": 1.0
+      }
+    }
+  },
+  {
+    "game_idx": 1,
+    "winner": "werewolf",
+    "end_day": 2,
+    "steps": 11,
+    "roles": {
+      "0": "seer",
+      "1": "villager",
+      "2": "villager",
+      "3": "villager",
+      "4": "werewolf"
+    },
+    "alive_at_end": [
+      3,
+      4
+    ],
+    "rewards_per_seat": {
+      "0": {
+        "outcome": 0.0,
+        "calibration": 0.0,
+        "survival": 0.25,
+        "format": 1.0
+      },
+      "1": {
+        "outcome": 0.0,
+        "calibration": 0.0,
+        "survival": 0.5,
+        "format": 1.0
+      },
+      "2": {
+        "outcome": 0.0,
+        "calibration": 0.5,
+        "survival": 0.25,
+        "format": 1.0
+      },
+      "3": {
+        "outcome": 0.0,
+        "calibration": 0.0,
+        "survival": 1.0,
+        "format": 1.0
+      },
+      "4": {
+        "outcome": 1.0,
+        "calibration": 1.0,
+        "survival": 1.0,
+        "format": 1.0
+      }
+    }
+  },
+  {
+    "game_idx": 2,
+    "winner": "werewolf",
+    "end_day": 2,
+    "steps": 12,
+    "roles": {
+      "0": "villager",
+      "1": "seer",
+      "2": "villager",
+      "3": "werewolf",
+      "4": "villager"
+    },
+    "alive_at_end": [
+      1,
+      3
+    ],
+    "rewards_per_seat": {
+      "0": {
+        "outcome": 0.0,
+        "calibration": 0.0,
+        "survival": 0.25,
+        "format": 1.0
+      },
+      "1": {
+        "outcome": 0.0,
+        "calibration": 0.0,
+        "survival": 1.0,
+        "format": 1.0
+      },
+      "2": {
+        "outcome": 0.0,
+        "calibration": 0.5,
+        "survival": 0.25,
+        "format": 1.0
+      },
+      "3": {
+        "outcome": 1.0,
+        "calibration": 1.0,
+        "survival": 1.0,
+        "format": 1.0
+      },
+      "4": {
+        "outcome": 0.0,
+        "calibration": 0.0,
+        "survival": 0.5,
+        "format": 1.0
+      }
+    }
+  },
+  {
+    "game_idx": 3,
+    "winner": "villager",
+    "end_day": 1,
+    "steps": 10,
+    "roles": {
+      "0": "werewolf",
+      "1": "villager",
+      "2": "seer",
+      "3": "villager",
+      "4": "villager"
+    },
+    "alive_at_end": [
+      1,
+      2,
+      3
+    ],
+    "rewards_per_seat": {
+      "0": {
+        "outcome": 0.0,
+        "calibration": 1.0,
+        "survival": 0.25,
+        "format": 1.0
+      },
+      "1": {
+        "outcome": 1.0,
+        "calibration": 0.0,
+        "survival": 1.0,
+        "format": 1.0
+      },
+      "2": {
+        "outcome": 1.0,
+        "calibration": 1.0,
+        "survival": 1.0,
+        "format": 1.0
+      },
+      "3": {
+        "outcome": 1.0,
+        "calibration": 1.0,
+        "survival": 1.0,
+        "format": 1.0
+      },
+      "4": {
+        "outcome": 1.0,
+        "calibration": 0.5,
+        "survival": 0.25,
+        "format": 1.0
+      }
+    }
+  },
+  {
+    "game_idx": 4,
+    "winner": "werewolf",
+    "end_day": 2,
+    "steps": 12,
+    "roles": {
+      "0": "seer",
+      "1": "villager",
+      "2": "villager",
+      "3": "villager",
+      "4": "werewolf"
+    },
+    "alive_at_end": [
+      0,
+      4
+    ],
+    "rewards_per_seat": {
+      "0": {
+        "outcome": 0.0,
+        "calibration": 0.0,
+        "survival": 1.0,
+        "format": 1.0
+      },
+      "1": {
+        "outcome": 0.0,
+        "calibration": 0.5,
+        "survival": 0.25,
+        "format": 1.0
+      },
+      "2": {
+        "outcome": 0.0,
+        "calibration": 1.0,
+        "survival": 0.25,
+        "format": 1.0
+      },
+      "3": {
+        "outcome": 0.0,
+        "calibration": 0.0,
+        "survival": 0.5,
+        "format": 1.0
+      },
+      "4": {
+        "outcome": 1.0,
+        "calibration": 1.0,
+        "survival": 1.0,
+        "format": 1.0
+      }
+    }
+  },
+  {
+    "game_idx": 5,
+    "winner": "werewolf",
+    "end_day": 2,
+    "steps": 12,
+    "roles": {
+      "0": "villager",
+      "1": "villager",
+      "2": "seer",
+      "3": "werewolf",
+      "4": "villager"
+    },
+    "alive_at_end": [
+      2,
+      3
+    ],
+    "rewards_per_seat": {
+      "0": {
+        "outcome": 0.0,
+        "calibration": 0.0,
+        "survival": 0.5,
+        "format": 1.0
+      },
+      "1": {
+        "outcome": 0.0,
+        "calibration": 0.0,
+        "survival": 0.25,
+        "format": 1.0
+      },
+      "2": {
+        "outcome": 0.0,
+        "calibration": 0.0,
+        "survival": 1.0,
+        "format": 1.0
+      },
+      "3": {
+        "outcome": 1.0,
+        "calibration": 1.0,
+        "survival": 1.0,
+        "format": 1.0
+      },
+      "4": {
+        "outcome": 0.0,
+        "calibration": 0.5,
+        "survival": 0.25,
+        "format": 1.0
+      }
+    }
+  },
+  {
+    "game_idx": 6,
+    "winner": "villager",
+    "end_day": 1,
+    "steps": 10,
+    "roles": {
+      "0": "villager",
+      "1": "seer",
+      "2": "werewolf",
+      "3": "villager",
+      "4": "villager"
+    },
+    "alive_at_end": [
+      1,
+      3,
+      4
+    ],
+    "rewards_per_seat": {
+      "0": {
+        "outcome": 1.0,
+        "calibration": 0.5,
+        "survival": 0.25,
+        "format": 1.0
+      },
+      "1": {
+        "outcome": 1.0,
+        "calibration": 1.0,
+        "survival": 1.0,
+        "format": 1.0
+      },
+      "2": {
+        "outcome": 0.0,
+        "calibration": 1.0,
+        "survival": 0.25,
+        "format": 1.0
+      },
+      "3": {
+        "outcome": 1.0,
+        "calibration": 0.0,
+        "survival": 1.0,
+        "format": 1.0
+      },
+      "4": {
+        "outcome": 1.0,
+        "calibration": 1.0,
+        "survival": 1.0,
+        "format": 1.0
+      }
+    }
+  },
+  {
+    "game_idx": 7,
+    "winner": "werewolf",
+    "end_day": 2,
+    "steps": 12,
+    "roles": {
+      "0": "villager",
+      "1": "villager",
+      "2": "seer",
+      "3": "villager",
+      "4": "werewolf"
+    },
+    "alive_at_end": [
+      0,
+      4
+    ],
+    "rewards_per_seat": {
+      "0": {
+        "outcome": 0.0,
+        "calibration": 0.0,
+        "survival": 1.0,
+        "format": 1.0
+      },
+      "1": {
+        "outcome": 0.0,
+        "calibration": 0.5,
+        "survival": 0.25,
+        "format": 1.0
+      },
+      "2": {
+        "outcome": 0.0,
+        "calibration": 0.0,
+        "survival": 0.5,
+        "format": 1.0
+      },
+      "3": {
+        "outcome": 0.0,
+        "calibration": 1.0,
+        "survival": 0.25,
+        "format": 1.0
+      },
+      "4": {
+        "outcome": 1.0,
+        "calibration": 1.0,
+        "survival": 1.0,
+        "format": 1.0
+      }
+    }
+  },
+  {
+    "game_idx": 8,
+    "winner": "werewolf",
+    "end_day": 2,
+    "steps": 12,
+    "roles": {
+      "0": "villager",
+      "1": "werewolf",
+      "2": "seer",
+      "3": "villager",
+      "4": "villager"
+    },
+    "alive_at_end": [
+      1,
+      2
+    ],
+    "rewards_per_seat": {
+      "0": {
+        "outcome": 0.0,
+        "calibration": 0.0,
+        "survival": 0.25,
+        "format": 1.0
+      },
+      "1": {
+        "outcome": 1.0,
+        "calibration": 1.0,
+        "survival": 1.0,
+        "format": 1.0
+      },
+      "2": {
+        "outcome": 0.0,
+        "calibration": 0.0,
+        "survival": 1.0,
+        "format": 1.0
+      },
+      "3": {
+        "outcome": 0.0,
+        "calibration": 0.5,
+        "survival": 0.25,
+        "format": 1.0
+      },
+      "4": {
+        "outcome": 0.0,
+        "calibration": 1.0,
+        "survival": 0.5,
+        "format": 1.0
+      }
+    }
+  },
+  {
+    "game_idx": 9,
+    "winner": "werewolf",
+    "end_day": 2,
+    "steps": 12,
+    "roles": {
+      "0": "villager",
+      "1": "villager",
+      "2": "werewolf",
+      "3": "villager",
+      "4": "seer"
+    },
+    "alive_at_end": [
+      2,
+      3
+    ],
+    "rewards_per_seat": {
+      "0": {
+        "outcome": 0.0,
+        "calibration": 0.5,
+        "survival": 0.25,
+        "format": 1.0
+      },
+      "1": {
+        "outcome": 0.0,
+        "calibration": 0.0,
+        "survival": 0.25,
+        "format": 1.0
+      },
+      "2": {
+        "outcome": 1.0,
+        "calibration": 1.0,
+        "survival": 1.0,
+        "format": 1.0
+      },
+      "3": {
+        "outcome": 0.0,
+        "calibration": 0.0,
+        "survival": 1.0,
+        "format": 1.0
+      },
+      "4": {
+        "outcome": 0.0,
+        "calibration": 0.0,
+        "survival": 0.5,
+        "format": 1.0
+      }
+    }
+  },
+  {
+    "game_idx": 10,
+    "winner": "werewolf",
+    "end_day": 2,
+    "steps": 11,
+    "roles": {
+      "0": "villager",
+      "1": "seer",
+      "2": "villager",
+      "3": "werewolf",
+      "4": "villager"
+    },
+    "alive_at_end": [
+      3,
+      4
+    ],
+    "rewards_per_seat": {
+      "0": {
+        "outcome": 0.0,
+        "calibration": 0.0,
+        "survival": 0.5,
+        "format": 1.0
+      },
+      "1": {
+        "outcome": 0.0,
+        "calibration": 0.5,
+        "survival": 0.25,
+        "format": 1.0
+      },
+      "2": {
+        "outcome": 0.0,
+        "calibration": 0.0,
+        "survival": 0.25,
+        "format": 1.0
+      },
+      "3": {
+        "outcome": 1.0,
+        "calibration": 1.0,
+        "survival": 1.0,
+        "format": 1.0
+      },
+      "4": {
+        "outcome": 0.0,
+        "calibration": 0.0,
+        "survival": 1.0,
+        "format": 1.0
+      }
+    }
+  },
+  {
+    "game_idx": 11,
+    "winner": "werewolf",
+    "end_day": 2,
+    "steps": 11,
+    "roles": {
+      "0": "werewolf",
+      "1": "villager",
+      "2": "villager",
+      "3": "seer",
+      "4": "villager"
+    },
+    "alive_at_end": [
+      0,
+      4
+    ],
+    "rewards_per_seat": {
+      "0": {
+        "outcome": 1.0,
+        "calibration": 1.0,
+        "survival": 1.0,
+        "format": 1.0
+      },
+      "1": {
+        "outcome": 0.0,
+        "calibration": 0.5,
+        "survival": 0.25,
+        "format": 1.0
+      },
+      "2": {
+        "outcome": 0.0,
+        "calibration": 0.0,
+        "survival": 0.5,
+        "format": 1.0
+      },
+      "3": {
+        "outcome": 0.0,
+        "calibration": 0.0,
+        "survival": 0.25,
+        "format": 1.0
+      },
+      "4": {
+        "outcome": 0.0,
+        "calibration": 0.0,
+        "survival": 1.0,
+        "format": 1.0
+      }
+    }
+  },
+  {
+    "game_idx": 12,
+    "winner": "werewolf",
+    "end_day": 2,
+    "steps": 12,
+    "roles": {
+      "0": "werewolf",
+      "1": "villager",
+      "2": "villager",
+      "3": "villager",
+      "4": "seer"
+    },
+    "alive_at_end": [
+      0,
+      3
+    ],
+    "rewards_per_seat": {
+      "0": {
+        "outcome": 1.0,
+        "calibration": 1.0,
+        "survival": 1.0,
+        "format": 1.0
+      },
+      "1": {
+        "outcome": 0.0,
+        "calibration": 0.0,
+        "survival": 0.25,
+        "format": 1.0
+      },
+      "2": {
+        "outcome": 0.0,
+        "calibration": 0.5,
+        "survival": 0.25,
+        "format": 1.0
+      },
+      "3": {
+        "outcome": 0.0,
+        "calibration": 0.0,
+        "survival": 1.0,
+        "format": 1.0
+      },
+      "4": {
+        "outcome": 0.0,
+        "calibration": 0.0,
+        "survival": 0.5,
+        "format": 1.0
+      }
+    }
+  },
+  {
+    "game_idx": 13,
+    "winner": "werewolf",
+    "end_day": 2,
+    "steps": 11,
+    "roles": {
+      "0": "villager",
+      "1": "villager",
+      "2": "villager",
+      "3": "seer",
+      "4": "werewolf"
+    },
+    "alive_at_end": [
+      0,
+      4
+    ],
+    "rewards_per_seat": {
+      "0": {
+        "outcome": 0.0,
+        "calibration": 0.0,
+        "survival": 1.0,
+        "format": 1.0
+      },
+      "1": {
+        "outcome": 0.0,
+        "calibration": 0.0,
+        "survival": 0.5,
+        "format": 1.0
+      },
+      "2": {
+        "outcome": 0.0,
+        "calibration": 0.0,
+        "survival": 0.25,
+        "format": 1.0
+      },
+      "3": {
+        "outcome": 0.0,
+        "calibration": 0.5,
+        "survival": 0.25,
+        "format": 1.0
+      },
+      "4": {
+        "outcome": 1.0,
+        "calibration": 1.0,
+        "survival": 1.0,
+        "format": 1.0
+      }
+    }
+  },
+  {
+    "game_idx": 14,
+    "winner": "werewolf",
+    "end_day": 2,
+    "steps": 11,
+    "roles": {
+      "0": "villager",
+      "1": "villager",
+      "2": "seer",
+      "3": "werewolf",
+      "4": "villager"
+    },
+    "alive_at_end": [
+      1,
+      3
+    ],
+    "rewards_per_seat": {
+      "0": {
+        "outcome": 0.0,
+        "calibration": 0.0,
+        "survival": 0.5,
+        "format": 1.0
+      },
+      "1": {
+        "outcome": 0.0,
+        "calibration": 0.0,
+        "survival": 1.0,
+        "format": 1.0
+      },
+      "2": {
+        "outcome": 0.0,
+        "calibration": 0.5,
+        "survival": 0.25,
+        "format": 1.0
+      },
+      "3": {
+        "outcome": 1.0,
+        "calibration": 1.0,
+        "survival": 1.0,
+        "format": 1.0
+      },
+      "4": {
+        "outcome": 0.0,
+        "calibration": 0.0,
+        "survival": 0.25,
+        "format": 1.0
+      }
+    }
+  },
+  {
+    "game_idx": 15,
+    "winner": "villager",
+    "end_day": 1,
+    "steps": 10,
+    "roles": {
+      "0": "seer",
+      "1": "villager",
+      "2": "villager",
+      "3": "villager",
+      "4": "werewolf"
+    },
+    "alive_at_end": [
+      0,
+      1,
+      3
+    ],
+    "rewards_per_seat": {
+      "0": {
+        "outcome": 1.0,
+        "calibration": 0.0,
+        "survival": 1.0,
+        "format": 1.0
+      },
+      "1": {
+        "outcome": 1.0,
+        "calibration": 1.0,
+        "survival": 1.0,
+        "format": 1.0
+      },
+      "2": {
+        "outcome": 1.0,
+        "calibration": 0.5,
+        "survival": 0.25,
+        "format": 1.0
+      },
+      "3": {
+        "outcome": 1.0,
+        "calibration": 1.0,
+        "survival": 1.0,
+        "format": 1.0
+      },
+      "4": {
+        "outcome": 0.0,
+        "calibration": 1.0,
+        "survival": 0.25,
+        "format": 1.0
+      }
+    }
+  },
+  {
+    "game_idx": 16,
+    "winner": "werewolf",
+    "end_day": 2,
+    "steps": 12,
+    "roles": {
+      "0": "villager",
+      "1": "villager",
+      "2": "werewolf",
+      "3": "seer",
+      "4": "villager"
+    },
+    "alive_at_end": [
+      1,
+      2
+    ],
+    "rewards_per_seat": {
+      "0": {
+        "outcome": 0.0,
+        "calibration": 0.5,
+        "survival": 0.25,
+        "format": 1.0
+      },
+      "1": {
+        "outcome": 0.0,
+        "calibration": 0.0,
+        "survival": 1.0,
+        "format": 1.0
+      },
+      "2": {
+        "outcome": 1.0,
+        "calibration": 1.0,
+        "survival": 1.0,
+        "format": 1.0
+      },
+      "3": {
+        "outcome": 0.0,
+        "calibration": 0.0,
+        "survival": 0.5,
+        "format": 1.0
+      },
+      "4": {
+        "outcome": 0.0,
+        "calibration": 1.0,
+        "survival": 0.25,
+        "format": 1.0
+      }
+    }
+  },
+  {
+    "game_idx": 17,
+    "winner": "werewolf",
+    "end_day": 2,
+    "steps": 11,
+    "roles": {
+      "0": "villager",
+      "1": "villager",
+      "2": "villager",
+      "3": "werewolf",
+      "4": "seer"
+    },
+    "alive_at_end": [
+      2,
+      3
+    ],
+    "rewards_per_seat": {
+      "0": {
+        "outcome": 0.0,
+        "calibration": 0.0,
+        "survival": 0.5,
+        "format": 1.0
+      },
+      "1": {
+        "outcome": 0.0,
+        "calibration": 1.0,
+        "survival": 0.25,
+        "format": 1.0
+      },
+      "2": {
+        "outcome": 0.0,
+        "calibration": 0.0,
+        "survival": 1.0,
+        "format": 1.0
+      },
+      "3": {
+        "outcome": 1.0,
+        "calibration": 1.0,
+        "survival": 1.0,
+        "format": 1.0
+      },
+      "4": {
+        "outcome": 0.0,
+        "calibration": 0.5,
+        "survival": 0.25,
+        "format": 1.0
+      }
+    }
+  },
+  {
+    "game_idx": 18,
+    "winner": "werewolf",
+    "end_day": 2,
+    "steps": 12,
+    "roles": {
+      "0": "seer",
+      "1": "werewolf",
+      "2": "villager",
+      "3": "villager",
+      "4": "villager"
+    },
+    "alive_at_end": [
+      0,
+      1
+    ],
+    "rewards_per_seat": {
+      "0": {
+        "outcome": 0.0,
+        "calibration": 0.0,
+        "survival": 1.0,
+        "format": 1.0
+      },
+      "1": {
+        "outcome": 1.0,
+        "calibration": 1.0,
+        "survival": 1.0,
+        "format": 1.0
+      },
+      "2": {
+        "outcome": 0.0,
+        "calibration": 0.5,
+        "survival": 0.25,
+        "format": 1.0
+      },
+      "3": {
+        "outcome": 0.0,
+        "calibration": 0.0,
+        "survival": 0.25,
+        "format": 1.0
+      },
+      "4": {
+        "outcome": 0.0,
+        "calibration": 0.0,
+        "survival": 0.5,
+        "format": 1.0
+      }
+    }
+  },
+  {
+    "game_idx": 19,
+    "winner": "werewolf",
+    "end_day": 2,
+    "steps": 12,
+    "roles": {
+      "0": "villager",
+      "1": "werewolf",
+      "2": "villager",
+      "3": "seer",
+      "4": "villager"
+    },
+    "alive_at_end": [
+      1,
+      3
+    ],
+    "rewards_per_seat": {
+      "0": {
+        "outcome": 0.0,
+        "calibration": 0.0,
+        "survival": 0.5,
+        "format": 1.0
+      },
+      "1": {
+        "outcome": 1.0,
+        "calibration": 1.0,
+        "survival": 1.0,
+        "format": 1.0
+      },
+      "2": {
+        "outcome": 0.0,
+        "calibration": 1.0,
+        "survival": 0.25,
+        "format": 1.0
+      },
+      "3": {
+        "outcome": 0.0,
+        "calibration": 0.0,
+        "survival": 1.0,
+        "format": 1.0
+      },
+      "4": {
+        "outcome": 0.0,
+        "calibration": 0.5,
+        "survival": 0.25,
+        "format": 1.0
+      }
+    }
+  },
+  {
+    "game_idx": 20,
+    "winner": "werewolf",
+    "end_day": 2,
+    "steps": 11,
+    "roles": {
+      "0": "villager",
+      "1": "villager",
+      "2": "werewolf",
+      "3": "seer",
+      "4": "villager"
+    },
+    "alive_at_end": [
+      0,
+      2
+    ],
+    "rewards_per_seat": {
+      "0": {
+        "outcome": 0.0,
+        "calibration": 0.0,
+        "survival": 1.0,
+        "format": 1.0
+      },
+      "1": {
+        "outcome": 0.0,
+        "calibration": 0.0,
+        "survival": 0.5,
+        "format": 1.0
+      },
+      "2": {
+        "outcome": 1.0,
+        "calibration": 1.0,
+        "survival": 1.0,
+        "format": 1.0
+      },
+      "3": {
+        "outcome": 0.0,
+        "calibration": 0.5,
+        "survival": 0.25,
+        "format": 1.0
+      },
+      "4": {
+        "outcome": 0.0,
+        "calibration": 0.0,
+        "survival": 0.25,
+        "format": 1.0
+      }
+    }
+  },
+  {
+    "game_idx": 21,
+    "winner": "werewolf",
+    "end_day": 2,
+    "steps": 12,
+    "roles": {
+      "0": "werewolf",
+      "1": "villager",
+      "2": "seer",
+      "3": "villager",
+      "4": "villager"
+    },
+    "alive_at_end": [
+      0,
+      2
+    ],
+    "rewards_per_seat": {
+      "0": {
+        "outcome": 1.0,
+        "calibration": 1.0,
+        "survival": 1.0,
+        "format": 1.0
+      },
+      "1": {
+        "outcome": 0.0,
+        "calibration": 0.5,
+        "survival": 0.25,
+        "format": 1.0
+      },
+      "2": {
+        "outcome": 0.0,
+        "calibration": 0.0,
+        "survival": 1.0,
+        "format": 1.0
+      },
+      "3": {
+        "outcome": 0.0,
+        "calibration": 0.0,
+        "survival": 0.5,
+        "format": 1.0
+      },
+      "4": {
+        "outcome": 0.0,
+        "calibration": 0.0,
+        "survival": 0.25,
+        "format": 1.0
+      }
+    }
+  },
+  {
+    "game_idx": 22,
+    "winner": "werewolf",
+    "end_day": 2,
+    "steps": 11,
+    "roles": {
+      "0": "villager",
+      "1": "seer",
+      "2": "villager",
+      "3": "werewolf",
+      "4": "villager"
+    },
+    "alive_at_end": [
+      0,
+      3
+    ],
+    "rewards_per_seat": {
+      "0": {
+        "outcome": 0.0,
+        "calibration": 0.0,
+        "survival": 1.0,
+        "format": 1.0
+      },
+      "1": {
+        "outcome": 0.0,
+        "calibration": 0.5,
+        "survival": 0.25,
+        "format": 1.0
+      },
+      "2": {
+        "outcome": 0.0,
+        "calibration": 0.0,
+        "survival": 0.25,
+        "format": 1.0
+      },
+      "3": {
+        "outcome": 1.0,
+        "calibration": 1.0,
+        "survival": 1.0,
+        "format": 1.0
+      },
+      "4": {
+        "outcome": 0.0,
+        "calibration": 0.0,
+        "survival": 0.5,
+        "format": 1.0
+      }
+    }
+  },
+  {
+    "game_idx": 23,
+    "winner": "werewolf",
+    "end_day": 2,
+    "steps": 11,
+    "roles": {
+      "0": "villager",
+      "1": "werewolf",
+      "2": "seer",
+      "3": "villager",
+      "4": "villager"
+    },
+    "alive_at_end": [
+      0,
+      1
+    ],
+    "rewards_per_seat": {
+      "0": {
+        "outcome": 0.0,
+        "calibration": 0.0,
+        "survival": 1.0,
+        "format": 1.0
+      },
+      "1": {
+        "outcome": 1.0,
+        "calibration": 1.0,
+        "survival": 1.0,
+        "format": 1.0
+      },
+      "2": {
+        "outcome": 0.0,
+        "calibration": 0.5,
+        "survival": 0.25,
+        "format": 1.0
+      },
+      "3": {
+        "outcome": 0.0,
+        "calibration": 0.0,
+        "survival": 0.5,
+        "format": 1.0
+      },
+      "4": {
+        "outcome": 0.0,
+        "calibration": 0.0,
+        "survival": 0.25,
+        "format": 1.0
+      }
+    }
+  },
+  {
+    "game_idx": 24,
+    "winner": "werewolf",
+    "end_day": 2,
+    "steps": 11,
+    "roles": {
+      "0": "villager",
+      "1": "villager",
+      "2": "seer",
+      "3": "villager",
+      "4": "werewolf"
+    },
+    "alive_at_end": [
+      1,
+      4
+    ],
+    "rewards_per_seat": {
+      "0": {
+        "outcome": 0.0,
+        "calibration": 0.0,
+        "survival": 0.5,
+        "format": 1.0
+      },
+      "1": {
+        "outcome": 0.0,
+        "calibration": 0.0,
+        "survival": 1.0,
+        "format": 1.0
+      },
+      "2": {
+        "outcome": 0.0,
+        "calibration": 0.0,
+        "survival": 0.25,
+        "format": 1.0
+      },
+      "3": {
+        "outcome": 0.0,
+        "calibration": 0.5,
+        "survival": 0.25,
+        "format": 1.0
+      },
+      "4": {
+        "outcome": 1.0,
+        "calibration": 1.0,
+        "survival": 1.0,
+        "format": 1.0
+      }
+    }
+  },
+  {
+    "game_idx": 25,
+    "winner": "werewolf",
+    "end_day": 2,
+    "steps": 12,
+    "roles": {
+      "0": "villager",
+      "1": "villager",
+      "2": "seer",
+      "3": "villager",
+      "4": "werewolf"
+    },
+    "alive_at_end": [
+      0,
+      4
+    ],
+    "rewards_per_seat": {
+      "0": {
+        "outcome": 0.0,
+        "calibration": 0.0,
+        "survival": 1.0,
+        "format": 1.0
+      },
+      "1": {
+        "outcome": 0.0,
+        "calibration": 0.0,
+        "survival": 0.25,
+        "format": 1.0
+      },
+      "2": {
+        "outcome": 0.0,
+        "calibration": 0.0,
+        "survival": 0.5,
+        "format": 1.0
+      },
+      "3": {
+        "outcome": 0.0,
+        "calibration": 0.5,
+        "survival": 0.25,
+        "format": 1.0
+      },
+      "4": {
+        "outcome": 1.0,
+        "calibration": 1.0,
+        "survival": 1.0,
+        "format": 1.0
+      }
+    }
+  },
+  {
+    "game_idx": 26,
+    "winner": "villager",
+    "end_day": 1,
+    "steps": 10,
+    "roles": {
+      "0": "seer",
+      "1": "villager",
+      "2": "villager",
+      "3": "werewolf",
+      "4": "villager"
+    },
+    "alive_at_end": [
+      0,
+      2,
+      4
+    ],
+    "rewards_per_seat": {
+      "0": {
+        "outcome": 1.0,
+        "calibration": 1.0,
+        "survival": 1.0,
+        "format": 1.0
+      },
+      "1": {
+        "outcome": 1.0,
+        "calibration": 0.5,
+        "survival": 0.25,
+        "format": 1.0
+      },
+      "2": {
+        "outcome": 1.0,
+        "calibration": 1.0,
+        "survival": 1.0,
+        "format": 1.0
+      },
+      "3": {
+        "outcome": 0.0,
+        "calibration": 1.0,
+        "survival": 0.25,
+        "format": 1.0
+      },
+      "4": {
+        "outcome": 1.0,
+        "calibration": 1.0,
+        "survival": 1.0,
+        "format": 1.0
+      }
+    }
+  },
+  {
+    "game_idx": 27,
+    "winner": "villager",
+    "end_day": 1,
+    "steps": 10,
+    "roles": {
+      "0": "seer",
+      "1": "villager",
+      "2": "villager",
+      "3": "villager",
+      "4": "werewolf"
+    },
+    "alive_at_end": [
+      1,
+      2,
+      3
+    ],
+    "rewards_per_seat": {
+      "0": {
+        "outcome": 1.0,
+        "calibration": 0.5,
+        "survival": 0.25,
+        "format": 1.0
+      },
+      "1": {
+        "outcome": 1.0,
+        "calibration": 1.0,
+        "survival": 1.0,
+        "format": 1.0
+      },
+      "2": {
+        "outcome": 1.0,
+        "calibration": 1.0,
+        "survival": 1.0,
+        "format": 1.0
+      },
+      "3": {
+        "outcome": 1.0,
+        "calibration": 1.0,
+        "survival": 1.0,
+        "format": 1.0
+      },
+      "4": {
+        "outcome": 0.0,
+        "calibration": 1.0,
+        "survival": 0.25,
+        "format": 1.0
+      }
+    }
+  },
+  {
+    "game_idx": 28,
+    "winner": "werewolf",
+    "end_day": 2,
+    "steps": 11,
+    "roles": {
+      "0": "villager",
+      "1": "seer",
+      "2": "villager",
+      "3": "villager",
+      "4": "werewolf"
+    },
+    "alive_at_end": [
+      2,
+      4
+    ],
+    "rewards_per_seat": {
+      "0": {
+        "outcome": 0.0,
+        "calibration": 0.0,
+        "survival": 0.5,
+        "format": 1.0
+      },
+      "1": {
+        "outcome": 0.0,
+        "calibration": 0.5,
+        "survival": 0.25,
+        "format": 1.0
+      },
+      "2": {
+        "outcome": 0.0,
+        "calibration": 0.0,
+        "survival": 1.0,
+        "format": 1.0
+      },
+      "3": {
+        "outcome": 0.0,
+        "calibration": 1.0,
+        "survival": 0.25,
+        "format": 1.0
+      },
+      "4": {
+        "outcome": 1.0,
+        "calibration": 1.0,
+        "survival": 1.0,
+        "format": 1.0
+      }
+    }
+  },
+  {
+    "game_idx": 29,
+    "winner": "werewolf",
+    "end_day": 2,
+    "steps": 12,
+    "roles": {
+      "0": "villager",
+      "1": "villager",
+      "2": "seer",
+      "3": "werewolf",
+      "4": "villager"
+    },
+    "alive_at_end": [
+      2,
+      3
+    ],
+    "rewards_per_seat": {
+      "0": {
+        "outcome": 0.0,
+        "calibration": 0.0,
+        "survival": 0.25,
+        "format": 1.0
+      },
+      "1": {
+        "outcome": 0.0,
+        "calibration": 0.5,
+        "survival": 0.25,
+        "format": 1.0
+      },
+      "2": {
+        "outcome": 0.0,
+        "calibration": 0.0,
+        "survival": 1.0,
+        "format": 1.0
+      },
+      "3": {
+        "outcome": 1.0,
+        "calibration": 1.0,
+        "survival": 1.0,
+        "format": 1.0
+      },
+      "4": {
+        "outcome": 0.0,
+        "calibration": 0.0,
+        "survival": 0.5,
+        "format": 1.0
+      }
+    }
+  },
+  {
+    "game_idx": 30,
+    "winner": "villager",
+    "end_day": 1,
+    "steps": 10,
+    "roles": {
+      "0": "villager",
+      "1": "villager",
+      "2": "villager",
+      "3": "seer",
+      "4": "werewolf"
+    },
+    "alive_at_end": [
+      0,
+      2,
+      3
+    ],
+    "rewards_per_seat": {
+      "0": {
+        "outcome": 1.0,
+        "calibration": 0.0,
+        "survival": 1.0,
+        "format": 1.0
+      },
+      "1": {
+        "outcome": 1.0,
+        "calibration": 0.5,
+        "survival": 0.25,
+        "format": 1.0
+      },
+      "2": {
+        "outcome": 1.0,
+        "calibration": 0.0,
+        "survival": 1.0,
+        "format": 1.0
+      },
+      "3": {
+        "outcome": 1.0,
+        "calibration": 0.0,
+        "survival": 1.0,
+        "format": 1.0
+      },
+      "4": {
+        "outcome": 0.0,
+        "calibration": 1.0,
+        "survival": 0.25,
+        "format": 1.0
+      }
+    }
+  },
+  {
+    "game_idx": 31,
+    "winner": "werewolf",
+    "end_day": 2,
+    "steps": 11,
+    "roles": {
+      "0": "villager",
+      "1": "seer",
+      "2": "villager",
+      "3": "werewolf",
+      "4": "villager"
+    },
+    "alive_at_end": [
+      3,
+      4
+    ],
+    "rewards_per_seat": {
+      "0": {
+        "outcome": 0.0,
+        "calibration": 1.0,
+        "survival": 0.5,
+        "format": 1.0
+      },
+      "1": {
+        "outcome": 0.0,
+        "calibration": 1.0,
+        "survival": 0.25,
+        "format": 1.0
+      },
+      "2": {
+        "outcome": 0.0,
+        "calibration": 0.5,
+        "survival": 0.25,
+        "format": 1.0
+      },
+      "3": {
+        "outcome": 1.0,
+        "calibration": 1.0,
+        "survival": 1.0,
+        "format": 1.0
+      },
+      "4": {
+        "outcome": 0.0,
+        "calibration": 0.0,
+        "survival": 1.0,
+        "format": 1.0
+      }
+    }
+  },
+  {
+    "game_idx": 32,
+    "winner": "werewolf",
+    "end_day": 2,
+    "steps": 12,
+    "roles": {
+      "0": "villager",
+      "1": "villager",
+      "2": "seer",
+      "3": "werewolf",
+      "4": "villager"
+    },
+    "alive_at_end": [
+      2,
+      3
+    ],
+    "rewards_per_seat": {
+      "0": {
+        "outcome": 0.0,
+        "calibration": 0.5,
+        "survival": 0.25,
+        "format": 1.0
+      },
+      "1": {
+        "outcome": 0.0,
+        "calibration": 0.0,
+        "survival": 0.25,
+        "format": 1.0
+      },
+      "2": {
+        "outcome": 0.0,
+        "calibration": 0.0,
+        "survival": 1.0,
+        "format": 1.0
+      },
+      "3": {
+        "outcome": 1.0,
+        "calibration": 1.0,
+        "survival": 1.0,
+        "format": 1.0
+      },
+      "4": {
+        "outcome": 0.0,
+        "calibration": 0.0,
+        "survival": 0.5,
+        "format": 1.0
+      }
+    }
+  },
+  {
+    "game_idx": 33,
+    "winner": "werewolf",
+    "end_day": 2,
+    "steps": 11,
+    "roles": {
+      "0": "villager",
+      "1": "werewolf",
+      "2": "seer",
+      "3": "villager",
+      "4": "villager"
+    },
+    "alive_at_end": [
+      0,
+      1
+    ],
+    "rewards_per_seat": {
+      "0": {
+        "outcome": 0.0,
+        "calibration": 0.0,
+        "survival": 1.0,
+        "format": 1.0
+      },
+      "1": {
+        "outcome": 1.0,
+        "calibration": 1.0,
+        "survival": 1.0,
+        "format": 1.0
+      },
+      "2": {
+        "outcome": 0.0,
+        "calibration": 0.5,
+        "survival": 0.25,
+        "format": 1.0
+      },
+      "3": {
+        "outcome": 0.0,
+        "calibration": 0.0,
+        "survival": 0.5,
+        "format": 1.0
+      },
+      "4": {
+        "outcome": 0.0,
+        "calibration": 0.0,
+        "survival": 0.25,
+        "format": 1.0
+      }
+    }
+  },
+  {
+    "game_idx": 34,
+    "winner": "werewolf",
+    "end_day": 2,
+    "steps": 12,
+    "roles": {
+      "0": "villager",
+      "1": "werewolf",
+      "2": "seer",
+      "3": "villager",
+      "4": "villager"
+    },
+    "alive_at_end": [
+      1,
+      4
+    ],
+    "rewards_per_seat": {
+      "0": {
+        "outcome": 0.0,
+        "calibration": 1.0,
+        "survival": 0.25,
+        "format": 1.0
+      },
+      "1": {
+        "outcome": 1.0,
+        "calibration": 1.0,
+        "survival": 1.0,
+        "format": 1.0
+      },
+      "2": {
+        "outcome": 0.0,
+        "calibration": 0.0,
+        "survival": 0.5,
+        "format": 1.0
+      },
+      "3": {
+        "outcome": 0.0,
+        "calibration": 0.5,
+        "survival": 0.25,
+        "format": 1.0
+      },
+      "4": {
+        "outcome": 0.0,
+        "calibration": 0.0,
+        "survival": 1.0,
+        "format": 1.0
+      }
+    }
+  },
+  {
+    "game_idx": 35,
+    "winner": "werewolf",
+    "end_day": 2,
+    "steps": 11,
+    "roles": {
+      "0": "seer",
+      "1": "villager",
+      "2": "werewolf",
+      "3": "villager",
+      "4": "villager"
+    },
+    "alive_at_end": [
+      2,
+      4
+    ],
+    "rewards_per_seat": {
+      "0": {
+        "outcome": 0.0,
+        "calibration": 0.5,
+        "survival": 0.25,
+        "format": 1.0
+      },
+      "1": {
+        "outcome": 0.0,
+        "calibration": 0.0,
+        "survival": 0.5,
+        "format": 1.0
+      },
+      "2": {
+        "outcome": 1.0,
+        "calibration": 1.0,
+        "survival": 1.0,
+        "format": 1.0
+      },
+      "3": {
+        "outcome": 0.0,
+        "calibration": 1.0,
+        "survival": 0.25,
+        "format": 1.0
+      },
+      "4": {
+        "outcome": 0.0,
+        "calibration": 0.0,
+        "survival": 1.0,
+        "format": 1.0
+      }
+    }
+  },
+  {
+    "game_idx": 36,
+    "winner": "werewolf",
+    "end_day": 2,
+    "steps": 12,
+    "roles": {
+      "0": "villager",
+      "1": "villager",
+      "2": "villager",
+      "3": "werewolf",
+      "4": "seer"
+    },
+    "alive_at_end": [
+      3,
+      4
+    ],
+    "rewards_per_seat": {
+      "0": {
+        "outcome": 0.0,
+        "calibration": 0.5,
+        "survival": 0.25,
+        "format": 1.0
+      },
+      "1": {
+        "outcome": 0.0,
+        "calibration": 0.0,
+        "survival": 0.5,
+        "format": 1.0
+      },
+      "2": {
+        "outcome": 0.0,
+        "calibration": 1.0,
+        "survival": 0.25,
+        "format": 1.0
+      },
+      "3": {
+        "outcome": 1.0,
+        "calibration": 1.0,
+        "survival": 1.0,
+        "format": 1.0
+      },
+      "4": {
+        "outcome": 0.0,
+        "calibration": 0.0,
+        "survival": 1.0,
+        "format": 1.0
+      }
+    }
+  },
+  {
+    "game_idx": 37,
+    "winner": "werewolf",
+    "end_day": 2,
+    "steps": 12,
+    "roles": {
+      "0": "villager",
+      "1": "werewolf",
+      "2": "villager",
+      "3": "villager",
+      "4": "seer"
+    },
+    "alive_at_end": [
+      1,
+      2
+    ],
+    "rewards_per_seat": {
+      "0": {
+        "outcome": 0.0,
+        "calibration": 1.0,
+        "survival": 0.25,
+        "format": 1.0
+      },
+      "1": {
+        "outcome": 1.0,
+        "calibration": 1.0,
+        "survival": 1.0,
+        "format": 1.0
+      },
+      "2": {
+        "outcome": 0.0,
+        "calibration": 0.0,
+        "survival": 1.0,
+        "format": 1.0
+      },
+      "3": {
+        "outcome": 0.0,
+        "calibration": 0.5,
+        "survival": 0.25,
+        "format": 1.0
+      },
+      "4": {
+        "outcome": 0.0,
+        "calibration": 0.0,
+        "survival": 0.5,
+        "format": 1.0
+      }
+    }
+  },
+  {
+    "game_idx": 38,
+    "winner": "werewolf",
+    "end_day": 2,
+    "steps": 12,
+    "roles": {
+      "0": "werewolf",
+      "1": "seer",
+      "2": "villager",
+      "3": "villager",
+      "4": "villager"
+    },
+    "alive_at_end": [
+      0,
+      4
+    ],
+    "rewards_per_seat": {
+      "0": {
+        "outcome": 1.0,
+        "calibration": 1.0,
+        "survival": 1.0,
+        "format": 1.0
+      },
+      "1": {
+        "outcome": 0.0,
+        "calibration": 0.0,
+        "survival": 0.5,
+        "format": 1.0
+      },
+      "2": {
+        "outcome": 0.0,
+        "calibration": 0.5,
+        "survival": 0.25,
+        "format": 1.0
+      },
+      "3": {
+        "outcome": 0.0,
+        "calibration": 0.0,
+        "survival": 0.25,
+        "format": 1.0
+      },
+      "4": {
+        "outcome": 0.0,
+        "calibration": 0.0,
+        "survival": 1.0,
+        "format": 1.0
+      }
+    }
+  },
+  {
+    "game_idx": 39,
+    "winner": "werewolf",
+    "end_day": 2,
+    "steps": 11,
+    "roles": {
+      "0": "werewolf",
+      "1": "villager",
+      "2": "seer",
+      "3": "villager",
+      "4": "villager"
+    },
+    "alive_at_end": [
+      0,
+      4
+    ],
+    "rewards_per_seat": {
+      "0": {
+        "outcome": 1.0,
+        "calibration": 1.0,
+        "survival": 1.0,
+        "format": 1.0
+      },
+      "1": {
+        "outcome": 0.0,
+        "calibration": 0.0,
+        "survival": 0.25,
+        "format": 1.0
+      },
+      "2": {
+        "outcome": 0.0,
+        "calibration": 0.5,
+        "survival": 0.25,
+        "format": 1.0
+      },
+      "3": {
+        "outcome": 0.0,
+        "calibration": 0.0,
+        "survival": 0.5,
+        "format": 1.0
+      },
+      "4": {
+        "outcome": 0.0,
+        "calibration": 0.0,
+        "survival": 1.0,
+        "format": 1.0
+      }
+    }
+  },
+  {
+    "game_idx": 40,
+    "winner": "werewolf",
+    "end_day": 2,
+    "steps": 11,
+    "roles": {
+      "0": "werewolf",
+      "1": "villager",
+      "2": "villager",
+      "3": "villager",
+      "4": "seer"
+    },
+    "alive_at_end": [
+      0,
+      3
+    ],
+    "rewards_per_seat": {
+      "0": {
+        "outcome": 1.0,
+        "calibration": 1.0,
+        "survival": 1.0,
+        "format": 1.0
+      },
+      "1": {
+        "outcome": 0.0,
+        "calibration": 0.0,
+        "survival": 0.5,
+        "format": 1.0
+      },
+      "2": {
+        "outcome": 0.0,
+        "calibration": 0.0,
+        "survival": 0.25,
+        "format": 1.0
+      },
+      "3": {
+        "outcome": 0.0,
+        "calibration": 0.0,
+        "survival": 1.0,
+        "format": 1.0
+      },
+      "4": {
+        "outcome": 0.0,
+        "calibration": 0.5,
+        "survival": 0.25,
+        "format": 1.0
+      }
+    }
+  },
+  {
+    "game_idx": 41,
+    "winner": "werewolf",
+    "end_day": 2,
+    "steps": 11,
+    "roles": {
+      "0": "seer",
+      "1": "villager",
+      "2": "werewolf",
+      "3": "villager",
+      "4": "villager"
+    },
+    "alive_at_end": [
+      2,
+      3
+    ],
+    "rewards_per_seat": {
+      "0": {
+        "outcome": 0.0,
+        "calibration": 0.5,
+        "survival": 0.25,
+        "format": 1.0
+      },
+      "1": {
+        "outcome": 0.0,
+        "calibration": 0.0,
+        "survival": 0.5,
+        "format": 1.0
+      },
+      "2": {
+        "outcome": 1.0,
+        "calibration": 1.0,
+        "survival": 1.0,
+        "format": 1.0
+      },
+      "3": {
+        "outcome": 0.0,
+        "calibration": 0.0,
+        "survival": 1.0,
+        "format": 1.0
+      },
+      "4": {
+        "outcome": 0.0,
+        "calibration": 0.0,
+        "survival": 0.25,
+        "format": 1.0
+      }
+    }
+  },
+  {
+    "game_idx": 42,
+    "winner": "werewolf",
+    "end_day": 2,
+    "steps": 11,
+    "roles": {
+      "0": "villager",
+      "1": "villager",
+      "2": "seer",
+      "3": "werewolf",
+      "4": "villager"
+    },
+    "alive_at_end": [
+      3,
+      4
+    ],
+    "rewards_per_seat": {
+      "0": {
+        "outcome": 0.0,
+        "calibration": 0.0,
+        "survival": 0.5,
+        "format": 1.0
+      },
+      "1": {
+        "outcome": 0.0,
+        "calibration": 0.5,
+        "survival": 0.25,
+        "format": 1.0
+      },
+      "2": {
+        "outcome": 0.0,
+        "calibration": 1.0,
+        "survival": 0.25,
+        "format": 1.0
+      },
+      "3": {
+        "outcome": 1.0,
+        "calibration": 1.0,
+        "survival": 1.0,
+        "format": 1.0
+      },
+      "4": {
+        "outcome": 0.0,
+        "calibration": 0.0,
+        "survival": 1.0,
+        "format": 1.0
+      }
+    }
+  },
+  {
+    "game_idx": 43,
+    "winner": "werewolf",
+    "end_day": 2,
+    "steps": 11,
+    "roles": {
+      "0": "villager",
+      "1": "villager",
+      "2": "villager",
+      "3": "werewolf",
+      "4": "seer"
+    },
+    "alive_at_end": [
+      0,
+      3
+    ],
+    "rewards_per_seat": {
+      "0": {
+        "outcome": 0.0,
+        "calibration": 0.0,
+        "survival": 1.0,
+        "format": 1.0
+      },
+      "1": {
+        "outcome": 0.0,
+        "calibration": 0.5,
+        "survival": 0.25,
+        "format": 1.0
+      },
+      "2": {
+        "outcome": 0.0,
+        "calibration": 0.0,
+        "survival": 0.5,
+        "format": 1.0
+      },
+      "3": {
+        "outcome": 1.0,
+        "calibration": 1.0,
+        "survival": 1.0,
+        "format": 1.0
+      },
+      "4": {
+        "outcome": 0.0,
+        "calibration": 0.0,
+        "survival": 0.25,
+        "format": 1.0
+      }
+    }
+  },
+  {
+    "game_idx": 44,
+    "winner": "werewolf",
+    "end_day": 2,
+    "steps": 11,
+    "roles": {
+      "0": "seer",
+      "1": "villager",
+      "2": "villager",
+      "3": "villager",
+      "4": "werewolf"
+    },
+    "alive_at_end": [
+      2,
+      4
+    ],
+    "rewards_per_seat": {
+      "0": {
+        "outcome": 0.0,
+        "calibration": 0.0,
+        "survival": 0.25,
+        "format": 1.0
+      },
+      "1": {
+        "outcome": 0.0,
+        "calibration": 0.0,
+        "survival": 0.5,
+        "format": 1.0
+      },
+      "2": {
+        "outcome": 0.0,
+        "calibration": 0.0,
+        "survival": 1.0,
+        "format": 1.0
+      },
+      "3": {
+        "outcome": 0.0,
+        "calibration": 0.5,
+        "survival": 0.25,
+        "format": 1.0
+      },
+      "4": {
+        "outcome": 1.0,
+        "calibration": 1.0,
+        "survival": 1.0,
+        "format": 1.0
+      }
+    }
+  },
+  {
+    "game_idx": 45,
+    "winner": "werewolf",
+    "end_day": 2,
+    "steps": 12,
+    "roles": {
+      "0": "villager",
+      "1": "werewolf",
+      "2": "villager",
+      "3": "villager",
+      "4": "seer"
+    },
+    "alive_at_end": [
+      1,
+      4
+    ],
+    "rewards_per_seat": {
+      "0": {
+        "outcome": 0.0,
+        "calibration": 1.0,
+        "survival": 0.25,
+        "format": 1.0
+      },
+      "1": {
+        "outcome": 1.0,
+        "calibration": 1.0,
+        "survival": 1.0,
+        "format": 1.0
+      },
+      "2": {
+        "outcome": 0.0,
+        "calibration": 0.5,
+        "survival": 0.25,
+        "format": 1.0
+      },
+      "3": {
+        "outcome": 0.0,
+        "calibration": 0.0,
+        "survival": 0.5,
+        "format": 1.0
+      },
+      "4": {
+        "outcome": 0.0,
+        "calibration": 0.0,
+        "survival": 1.0,
+        "format": 1.0
+      }
+    }
+  },
+  {
+    "game_idx": 46,
+    "winner": "werewolf",
+    "end_day": 2,
+    "steps": 12,
+    "roles": {
+      "0": "villager",
+      "1": "werewolf",
+      "2": "villager",
+      "3": "seer",
+      "4": "villager"
+    },
+    "alive_at_end": [
+      1,
+      2
+    ],
+    "rewards_per_seat": {
+      "0": {
+        "outcome": 0.0,
+        "calibration": 0.5,
+        "survival": 0.25,
+        "format": 1.0
+      },
+      "1": {
+        "outcome": 1.0,
+        "calibration": 1.0,
+        "survival": 1.0,
+        "format": 1.0
+      },
+      "2": {
+        "outcome": 0.0,
+        "calibration": 0.0,
+        "survival": 1.0,
+        "format": 1.0
+      },
+      "3": {
+        "outcome": 0.0,
+        "calibration": 0.0,
+        "survival": 0.5,
+        "format": 1.0
+      },
+      "4": {
+        "outcome": 0.0,
+        "calibration": 1.0,
+        "survival": 0.25,
+        "format": 1.0
+      }
+    }
+  },
+  {
+    "game_idx": 47,
+    "winner": "villager",
+    "end_day": 1,
+    "steps": 10,
+    "roles": {
+      "0": "villager",
+      "1": "seer",
+      "2": "villager",
+      "3": "villager",
+      "4": "werewolf"
+    },
+    "alive_at_end": [
+      0,
+      2,
+      3
+    ],
+    "rewards_per_seat": {
+      "0": {
+        "outcome": 1.0,
+        "calibration": 0.0,
+        "survival": 1.0,
+        "format": 1.0
+      },
+      "1": {
+        "outcome": 1.0,
+        "calibration": 0.5,
+        "survival": 0.25,
+        "format": 1.0
+      },
+      "2": {
+        "outcome": 1.0,
+        "calibration": 0.0,
+        "survival": 1.0,
+        "format": 1.0
+      },
+      "3": {
+        "outcome": 1.0,
+        "calibration": 0.0,
+        "survival": 1.0,
+        "format": 1.0
+      },
+      "4": {
+        "outcome": 0.0,
+        "calibration": 1.0,
+        "survival": 0.25,
+        "format": 1.0
+      }
+    }
+  },
+  {
+    "game_idx": 48,
+    "winner": "werewolf",
+    "end_day": 2,
+    "steps": 11,
+    "roles": {
+      "0": "villager",
+      "1": "villager",
+      "2": "villager",
+      "3": "werewolf",
+      "4": "seer"
+    },
+    "alive_at_end": [
+      2,
+      3
+    ],
+    "rewards_per_seat": {
+      "0": {
+        "outcome": 0.0,
+        "calibration": 0.0,
+        "survival": 0.5,
+        "format": 1.0
+      },
+      "1": {
+        "outcome": 0.0,
+        "calibration": 0.5,
+        "survival": 0.25,
+        "format": 1.0
+      },
+      "2": {
+        "outcome": 0.0,
+        "calibration": 0.0,
+        "survival": 1.0,
+        "format": 1.0
+      },
+      "3": {
+        "outcome": 1.0,
+        "calibration": 1.0,
+        "survival": 1.0,
+        "format": 1.0
+      },
+      "4": {
+        "outcome": 0.0,
+        "calibration": 0.0,
+        "survival": 0.25,
+        "format": 1.0
+      }
+    }
+  },
+  {
+    "game_idx": 49,
+    "winner": "werewolf",
+    "end_day": 2,
+    "steps": 11,
+    "roles": {
+      "0": "villager",
+      "1": "villager",
+      "2": "villager",
+      "3": "seer",
+      "4": "werewolf"
+    },
+    "alive_at_end": [
+      0,
+      4
+    ],
+    "rewards_per_seat": {
+      "0": {
+        "outcome": 0.0,
+        "calibration": 0.0,
+        "survival": 1.0,
+        "format": 1.0
+      },
+      "1": {
+        "outcome": 0.0,
+        "calibration": 0.0,
+        "survival": 0.5,
+        "format": 1.0
+      },
+      "2": {
+        "outcome": 0.0,
+        "calibration": 0.5,
+        "survival": 0.25,
+        "format": 1.0
+      },
+      "3": {
+        "outcome": 0.0,
+        "calibration": 0.0,
+        "survival": 0.25,
+        "format": 1.0
+      },
+      "4": {
+        "outcome": 1.0,
+        "calibration": 1.0,
+        "survival": 1.0,
+        "format": 1.0
+      }
+    }
+  },
+  {
+    "game_idx": 50,
+    "winner": "werewolf",
+    "end_day": 2,
+    "steps": 11,
+    "roles": {
+      "0": "seer",
+      "1": "werewolf",
+      "2": "villager",
+      "3": "villager",
+      "4": "villager"
+    },
+    "alive_at_end": [
+      1,
+      2
+    ],
+    "rewards_per_seat": {
+      "0": {
+        "outcome": 0.0,
+        "calibration": 0.0,
+        "survival": 0.25,
+        "format": 1.0
+      },
+      "1": {
+        "outcome": 1.0,
+        "calibration": 1.0,
+        "survival": 1.0,
+        "format": 1.0
+      },
+      "2": {
+        "outcome": 0.0,
+        "calibration": 0.0,
+        "survival": 1.0,
+        "format": 1.0
+      },
+      "3": {
+        "outcome": 0.0,
+        "calibration": 0.5,
+        "survival": 0.25,
+        "format": 1.0
+      },
+      "4": {
+        "outcome": 0.0,
+        "calibration": 0.0,
+        "survival": 0.5,
+        "format": 1.0
+      }
+    }
+  },
+  {
+    "game_idx": 51,
+    "winner": "werewolf",
+    "end_day": 2,
+    "steps": 11,
+    "roles": {
+      "0": "seer",
+      "1": "villager",
+      "2": "werewolf",
+      "3": "villager",
+      "4": "villager"
+    },
+    "alive_at_end": [
+      2,
+      3
+    ],
+    "rewards_per_seat": {
+      "0": {
+        "outcome": 0.0,
+        "calibration": 0.5,
+        "survival": 0.25,
+        "format": 1.0
+      },
+      "1": {
+        "outcome": 0.0,
+        "calibration": 1.0,
+        "survival": 0.25,
+        "format": 1.0
+      },
+      "2": {
+        "outcome": 1.0,
+        "calibration": 1.0,
+        "survival": 1.0,
+        "format": 1.0
+      },
+      "3": {
+        "outcome": 0.0,
+        "calibration": 0.0,
+        "survival": 1.0,
+        "format": 1.0
+      },
+      "4": {
+        "outcome": 0.0,
+        "calibration": 0.0,
+        "survival": 0.5,
+        "format": 1.0
+      }
+    }
+  },
+  {
+    "game_idx": 52,
+    "winner": "villager",
+    "end_day": 1,
+    "steps": 10,
+    "roles": {
+      "0": "villager",
+      "1": "villager",
+      "2": "werewolf",
+      "3": "seer",
+      "4": "villager"
+    },
+    "alive_at_end": [
+      0,
+      1,
+      3
+    ],
+    "rewards_per_seat": {
+      "0": {
+        "outcome": 1.0,
+        "calibration": 1.0,
+        "survival": 1.0,
+        "format": 1.0
+      },
+      "1": {
+        "outcome": 1.0,
+        "calibration": 1.0,
+        "survival": 1.0,
+        "format": 1.0
+      },
+      "2": {
+        "outcome": 0.0,
+        "calibration": 1.0,
+        "survival": 0.25,
+        "format": 1.0
+      },
+      "3": {
+        "outcome": 1.0,
+        "calibration": 1.0,
+        "survival": 1.0,
+        "format": 1.0
+      },
+      "4": {
+        "outcome": 1.0,
+        "calibration": 0.5,
+        "survival": 0.25,
+        "format": 1.0
+      }
+    }
+  },
+  {
+    "game_idx": 53,
+    "winner": "werewolf",
+    "end_day": 2,
+    "steps": 11,
+    "roles": {
+      "0": "villager",
+      "1": "werewolf",
+      "2": "villager",
+      "3": "seer",
+      "4": "villager"
+    },
+    "alive_at_end": [
+      1,
+      2
+    ],
+    "rewards_per_seat": {
+      "0": {
+        "outcome": 0.0,
+        "calibration": 0.5,
+        "survival": 0.25,
+        "format": 1.0
+      },
+      "1": {
+        "outcome": 1.0,
+        "calibration": 1.0,
+        "survival": 1.0,
+        "format": 1.0
+      },
+      "2": {
+        "outcome": 0.0,
+        "calibration": 0.0,
+        "survival": 1.0,
+        "format": 1.0
+      },
+      "3": {
+        "outcome": 0.0,
+        "calibration": 0.0,
+        "survival": 0.25,
+        "format": 1.0
+      },
+      "4": {
+        "outcome": 0.0,
+        "calibration": 0.0,
+        "survival": 0.5,
+        "format": 1.0
+      }
+    }
+  },
+  {
+    "game_idx": 54,
+    "winner": "werewolf",
+    "end_day": 2,
+    "steps": 11,
+    "roles": {
+      "0": "werewolf",
+      "1": "seer",
+      "2": "villager",
+      "3": "villager",
+      "4": "villager"
+    },
+    "alive_at_end": [
+      0,
+      3
+    ],
+    "rewards_per_seat": {
+      "0": {
+        "outcome": 1.0,
+        "calibration": 1.0,
+        "survival": 1.0,
+        "format": 1.0
+      },
+      "1": {
+        "outcome": 0.0,
+        "calibration": 0.5,
+        "survival": 0.25,
+        "format": 1.0
+      },
+      "2": {
+        "outcome": 0.0,
+        "calibration": 0.0,
+        "survival": 0.5,
+        "format": 1.0
+      },
+      "3": {
+        "outcome": 0.0,
+        "calibration": 0.0,
+        "survival": 1.0,
+        "format": 1.0
+      },
+      "4": {
+        "outcome": 0.0,
+        "calibration": 0.0,
+        "survival": 0.25,
+        "format": 1.0
+      }
+    }
+  },
+  {
+    "game_idx": 55,
+    "winner": "werewolf",
+    "end_day": 2,
+    "steps": 12,
+    "roles": {
+      "0": "villager",
+      "1": "werewolf",
+      "2": "villager",
+      "3": "villager",
+      "4": "seer"
+    },
+    "alive_at_end": [
+      1,
+      2
+    ],
+    "rewards_per_seat": {
+      "0": {
+        "outcome": 0.0,
+        "calibration": 0.5,
+        "survival": 0.25,
+        "format": 1.0
+      },
+      "1": {
+        "outcome": 1.0,
+        "calibration": 1.0,
+        "survival": 1.0,
+        "format": 1.0
+      },
+      "2": {
+        "outcome": 0.0,
+        "calibration": 0.0,
+        "survival": 1.0,
+        "format": 1.0
+      },
+      "3": {
+        "outcome": 0.0,
+        "calibration": 1.0,
+        "survival": 0.25,
+        "format": 1.0
+      },
+      "4": {
+        "outcome": 0.0,
+        "calibration": 0.0,
+        "survival": 0.5,
+        "format": 1.0
+      }
+    }
+  },
+  {
+    "game_idx": 56,
+    "winner": "werewolf",
+    "end_day": 2,
+    "steps": 12,
+    "roles": {
+      "0": "villager",
+      "1": "villager",
+      "2": "seer",
+      "3": "werewolf",
+      "4": "villager"
+    },
+    "alive_at_end": [
+      2,
+      3
+    ],
+    "rewards_per_seat": {
+      "0": {
+        "outcome": 0.0,
+        "calibration": 0.0,
+        "survival": 0.25,
+        "format": 1.0
+      },
+      "1": {
+        "outcome": 0.0,
+        "calibration": 0.0,
+        "survival": 0.5,
+        "format": 1.0
+      },
+      "2": {
+        "outcome": 0.0,
+        "calibration": 0.0,
+        "survival": 1.0,
+        "format": 1.0
+      },
+      "3": {
+        "outcome": 1.0,
+        "calibration": 1.0,
+        "survival": 1.0,
+        "format": 1.0
+      },
+      "4": {
+        "outcome": 0.0,
+        "calibration": 0.5,
+        "survival": 0.25,
+        "format": 1.0
+      }
+    }
+  },
+  {
+    "game_idx": 57,
+    "winner": "werewolf",
+    "end_day": 2,
+    "steps": 11,
+    "roles": {
+      "0": "seer",
+      "1": "villager",
+      "2": "werewolf",
+      "3": "villager",
+      "4": "villager"
+    },
+    "alive_at_end": [
+      1,
+      2
+    ],
+    "rewards_per_seat": {
+      "0": {
+        "outcome": 0.0,
+        "calibration": 0.0,
+        "survival": 0.25,
+        "format": 1.0
+      },
+      "1": {
+        "outcome": 0.0,
+        "calibration": 0.0,
+        "survival": 1.0,
+        "format": 1.0
+      },
+      "2": {
+        "outcome": 1.0,
+        "calibration": 1.0,
+        "survival": 1.0,
+        "format": 1.0
+      },
+      "3": {
+        "outcome": 0.0,
+        "calibration": 0.0,
+        "survival": 0.5,
+        "format": 1.0
+      },
+      "4": {
+        "outcome": 0.0,
+        "calibration": 0.5,
+        "survival": 0.25,
+        "format": 1.0
+      }
+    }
+  },
+  {
+    "game_idx": 58,
+    "winner": "werewolf",
+    "end_day": 2,
+    "steps": 11,
+    "roles": {
+      "0": "villager",
+      "1": "werewolf",
+      "2": "villager",
+      "3": "villager",
+      "4": "seer"
+    },
+    "alive_at_end": [
+      0,
+      1
+    ],
+    "rewards_per_seat": {
+      "0": {
+        "outcome": 0.0,
+        "calibration": 0.0,
+        "survival": 1.0,
+        "format": 1.0
+      },
+      "1": {
+        "outcome": 1.0,
+        "calibration": 1.0,
+        "survival": 1.0,
+        "format": 1.0
+      },
+      "2": {
+        "outcome": 0.0,
+        "calibration": 0.5,
+        "survival": 0.25,
+        "format": 1.0
+      },
+      "3": {
+        "outcome": 0.0,
+        "calibration": 0.0,
+        "survival": 0.5,
+        "format": 1.0
+      },
+      "4": {
+        "outcome": 0.0,
+        "calibration": 0.0,
+        "survival": 0.25,
+        "format": 1.0
+      }
+    }
+  },
+  {
+    "game_idx": 59,
+    "winner": "werewolf",
+    "end_day": 2,
+    "steps": 11,
+    "roles": {
+      "0": "werewolf",
+      "1": "villager",
+      "2": "villager",
+      "3": "seer",
+      "4": "villager"
+    },
+    "alive_at_end": [
+      0,
+      2
+    ],
+    "rewards_per_seat": {
+      "0": {
+        "outcome": 1.0,
+        "calibration": 1.0,
+        "survival": 1.0,
+        "format": 1.0
+      },
+      "1": {
+        "outcome": 0.0,
+        "calibration": 0.0,
+        "survival": 0.5,
+        "format": 1.0
+      },
+      "2": {
+        "outcome": 0.0,
+        "calibration": 0.0,
+        "survival": 1.0,
+        "format": 1.0
+      },
+      "3": {
+        "outcome": 0.0,
+        "calibration": 0.0,
+        "survival": 0.25,
+        "format": 1.0
+      },
+      "4": {
+        "outcome": 0.0,
+        "calibration": 0.5,
+        "survival": 0.25,
+        "format": 1.0
+      }
+    }
+  },
+  {
+    "game_idx": 60,
+    "winner": "werewolf",
+    "end_day": 2,
+    "steps": 11,
+    "roles": {
+      "0": "villager",
+      "1": "villager",
+      "2": "werewolf",
+      "3": "villager",
+      "4": "seer"
+    },
+    "alive_at_end": [
+      2,
+      3
+    ],
+    "rewards_per_seat": {
+      "0": {
+        "outcome": 0.0,
+        "calibration": 0.0,
+        "survival": 0.25,
+        "format": 1.0
+      },
+      "1": {
+        "outcome": 0.0,
+        "calibration": 0.0,
+        "survival": 0.5,
+        "format": 1.0
+      },
+      "2": {
+        "outcome": 1.0,
+        "calibration": 1.0,
+        "survival": 1.0,
+        "format": 1.0
+      },
+      "3": {
+        "outcome": 0.0,
+        "calibration": 0.0,
+        "survival": 1.0,
+        "format": 1.0
+      },
+      "4": {
+        "outcome": 0.0,
+        "calibration": 0.5,
+        "survival": 0.25,
+        "format": 1.0
+      }
+    }
+  },
+  {
+    "game_idx": 61,
+    "winner": "werewolf",
+    "end_day": 2,
+    "steps": 12,
+    "roles": {
+      "0": "villager",
+      "1": "werewolf",
+      "2": "villager",
+      "3": "seer",
+      "4": "villager"
+    },
+    "alive_at_end": [
+      1,
+      3
+    ],
+    "rewards_per_seat": {
+      "0": {
+        "outcome": 0.0,
+        "calibration": 1.0,
+        "survival": 0.25,
+        "format": 1.0
+      },
+      "1": {
+        "outcome": 1.0,
+        "calibration": 1.0,
+        "survival": 1.0,
+        "format": 1.0
+      },
+      "2": {
+        "outcome": 0.0,
+        "calibration": 0.5,
+        "survival": 0.25,
+        "format": 1.0
+      },
+      "3": {
+        "outcome": 0.0,
+        "calibration": 0.0,
+        "survival": 1.0,
+        "format": 1.0
+      },
+      "4": {
+        "outcome": 0.0,
+        "calibration": 0.0,
+        "survival": 0.5,
+        "format": 1.0
+      }
+    }
+  },
+  {
+    "game_idx": 62,
+    "winner": "werewolf",
+    "end_day": 2,
+    "steps": 11,
+    "roles": {
+      "0": "villager",
+      "1": "villager",
+      "2": "villager",
+      "3": "seer",
+      "4": "werewolf"
+    },
+    "alive_at_end": [
+      2,
+      4
+    ],
+    "rewards_per_seat": {
+      "0": {
+        "outcome": 0.0,
+        "calibration": 0.5,
+        "survival": 0.25,
+        "format": 1.0
+      },
+      "1": {
+        "outcome": 0.0,
+        "calibration": 0.0,
+        "survival": 0.5,
+        "format": 1.0
+      },
+      "2": {
+        "outcome": 0.0,
+        "calibration": 0.0,
+        "survival": 1.0,
+        "format": 1.0
+      },
+      "3": {
+        "outcome": 0.0,
+        "calibration": 0.0,
+        "survival": 0.25,
+        "format": 1.0
+      },
+      "4": {
+        "outcome": 1.0,
+        "calibration": 1.0,
+        "survival": 1.0,
+        "format": 1.0
+      }
+    }
+  },
+  {
+    "game_idx": 63,
+    "winner": "werewolf",
+    "end_day": 2,
+    "steps": 11,
+    "roles": {
+      "0": "seer",
+      "1": "werewolf",
+      "2": "villager",
+      "3": "villager",
+      "4": "villager"
+    },
+    "alive_at_end": [
+      1,
+      4
+    ],
+    "rewards_per_seat": {
+      "0": {
+        "outcome": 0.0,
+        "calibration": 1.0,
+        "survival": 0.25,
+        "format": 1.0
+      },
+      "1": {
+        "outcome": 1.0,
+        "calibration": 1.0,
+        "survival": 1.0,
+        "format": 1.0
+      },
+      "2": {
+        "outcome": 0.0,
+        "calibration": 0.5,
+        "survival": 0.25,
+        "format": 1.0
+      },
+      "3": {
+        "outcome": 0.0,
+        "calibration": 0.0,
+        "survival": 0.5,
+        "format": 1.0
+      },
+      "4": {
+        "outcome": 0.0,
+        "calibration": 0.0,
+        "survival": 1.0,
+        "format": 1.0
+      }
+    }
+  },
+  {
+    "game_idx": 64,
+    "winner": "werewolf",
+    "end_day": 2,
+    "steps": 11,
+    "roles": {
+      "0": "villager",
+      "1": "seer",
+      "2": "villager",
+      "3": "werewolf",
+      "4": "villager"
+    },
+    "alive_at_end": [
+      3,
+      4
+    ],
+    "rewards_per_seat": {
+      "0": {
+        "outcome": 0.0,
+        "calibration": 0.0,
+        "survival": 0.5,
+        "format": 1.0
+      },
+      "1": {
+        "outcome": 0.0,
+        "calibration": 0.0,
+        "survival": 0.25,
+        "format": 1.0
+      },
+      "2": {
+        "outcome": 0.0,
+        "calibration": 0.5,
+        "survival": 0.25,
+        "format": 1.0
+      },
+      "3": {
+        "outcome": 1.0,
+        "calibration": 1.0,
+        "survival": 1.0,
+        "format": 1.0
+      },
+      "4": {
+        "outcome": 0.0,
+        "calibration": 0.0,
+        "survival": 1.0,
+        "format": 1.0
+      }
+    }
+  },
+  {
+    "game_idx": 65,
+    "winner": "werewolf",
+    "end_day": 2,
+    "steps": 11,
+    "roles": {
+      "0": "werewolf",
+      "1": "villager",
+      "2": "villager",
+      "3": "villager",
+      "4": "seer"
+    },
+    "alive_at_end": [
+      0,
+      2
+    ],
+    "rewards_per_seat": {
+      "0": {
+        "outcome": 1.0,
+        "calibration": 1.0,
+        "survival": 1.0,
+        "format": 1.0
+      },
+      "1": {
+        "outcome": 0.0,
+        "calibration": 0.0,
+        "survival": 0.25,
+        "format": 1.0
+      },
+      "2": {
+        "outcome": 0.0,
+        "calibration": 0.0,
+        "survival": 1.0,
+        "format": 1.0
+      },
+      "3": {
+        "outcome": 0.0,
+        "calibration": 0.0,
+        "survival": 0.5,
+        "format": 1.0
+      },
+      "4": {
+        "outcome": 0.0,
+        "calibration": 0.5,
+        "survival": 0.25,
+        "format": 1.0
+      }
+    }
+  },
+  {
+    "game_idx": 66,
+    "winner": "werewolf",
+    "end_day": 2,
+    "steps": 11,
+    "roles": {
+      "0": "villager",
+      "1": "villager",
+      "2": "villager",
+      "3": "werewolf",
+      "4": "seer"
+    },
+    "alive_at_end": [
+      2,
+      3
+    ],
+    "rewards_per_seat": {
+      "0": {
+        "outcome": 0.0,
+        "calibration": 0.5,
+        "survival": 0.25,
+        "format": 1.0
+      },
+      "1": {
+        "outcome": 0.0,
+        "calibration": 0.0,
+        "survival": 0.5,
+        "format": 1.0
+      },
+      "2": {
+        "outcome": 0.0,
+        "calibration": 0.0,
+        "survival": 1.0,
+        "format": 1.0
+      },
+      "3": {
+        "outcome": 1.0,
+        "calibration": 1.0,
+        "survival": 1.0,
+        "format": 1.0
+      },
+      "4": {
+        "outcome": 0.0,
+        "calibration": 0.0,
+        "survival": 0.25,
+        "format": 1.0
+      }
+    }
+  },
+  {
+    "game_idx": 67,
+    "winner": "werewolf",
+    "end_day": 2,
+    "steps": 12,
+    "roles": {
+      "0": "werewolf",
+      "1": "villager",
+      "2": "villager",
+      "3": "seer",
+      "4": "villager"
+    },
+    "alive_at_end": [
+      0,
+      4
+    ],
+    "rewards_per_seat": {
+      "0": {
+        "outcome": 1.0,
+        "calibration": 1.0,
+        "survival": 1.0,
+        "format": 1.0
+      },
+      "1": {
+        "outcome": 0.0,
+        "calibration": 0.0,
+        "survival": 0.25,
+        "format": 1.0
+      },
+      "2": {
+        "outcome": 0.0,
+        "calibration": 0.5,
+        "survival": 0.25,
+        "format": 1.0
+      },
+      "3": {
+        "outcome": 0.0,
+        "calibration": 0.0,
+        "survival": 0.5,
+        "format": 1.0
+      },
+      "4": {
+        "outcome": 0.0,
+        "calibration": 0.0,
+        "survival": 1.0,
+        "format": 1.0
+      }
+    }
+  },
+  {
+    "game_idx": 68,
+    "winner": "werewolf",
+    "end_day": 2,
+    "steps": 12,
+    "roles": {
+      "0": "werewolf",
+      "1": "villager",
+      "2": "villager",
+      "3": "seer",
+      "4": "villager"
+    },
+    "alive_at_end": [
+      0,
+      3
+    ],
+    "rewards_per_seat": {
+      "0": {
+        "outcome": 1.0,
+        "calibration": 1.0,
+        "survival": 1.0,
+        "format": 1.0
+      },
+      "1": {
+        "outcome": 0.0,
+        "calibration": 0.0,
+        "survival": 0.25,
+        "format": 1.0
+      },
+      "2": {
+        "outcome": 0.0,
+        "calibration": 0.0,
+        "survival": 0.5,
+        "format": 1.0
+      },
+      "3": {
+        "outcome": 0.0,
+        "calibration": 0.0,
+        "survival": 1.0,
+        "format": 1.0
+      },
+      "4": {
+        "outcome": 0.0,
+        "calibration": 0.5,
+        "survival": 0.25,
+        "format": 1.0
+      }
+    }
+  },
+  {
+    "game_idx": 69,
+    "winner": "villager",
+    "end_day": 1,
+    "steps": 10,
+    "roles": {
+      "0": "villager",
+      "1": "werewolf",
+      "2": "villager",
+      "3": "villager",
+      "4": "seer"
+    },
+    "alive_at_end": [
+      2,
+      3,
+      4
+    ],
+    "rewards_per_seat": {
+      "0": {
+        "outcome": 1.0,
+        "calibration": 0.5,
+        "survival": 0.25,
+        "format": 1.0
+      },
+      "1": {
+        "outcome": 0.0,
+        "calibration": 1.0,
+        "survival": 0.25,
+        "format": 1.0
+      },
+      "2": {
+        "outcome": 1.0,
+        "calibration": 1.0,
+        "survival": 1.0,
+        "format": 1.0
+      },
+      "3": {
+        "outcome": 1.0,
+        "calibration": 1.0,
+        "survival": 1.0,
+        "format": 1.0
+      },
+      "4": {
+        "outcome": 1.0,
+        "calibration": 1.0,
+        "survival": 1.0,
+        "format": 1.0
+      }
+    }
+  },
+  {
+    "game_idx": 70,
+    "winner": "werewolf",
+    "end_day": 2,
+    "steps": 12,
+    "roles": {
+      "0": "werewolf",
+      "1": "seer",
+      "2": "villager",
+      "3": "villager",
+      "4": "villager"
+    },
+    "alive_at_end": [
+      0,
+      2
+    ],
+    "rewards_per_seat": {
+      "0": {
+        "outcome": 1.0,
+        "calibration": 1.0,
+        "survival": 1.0,
+        "format": 1.0
+      },
+      "1": {
+        "outcome": 0.0,
+        "calibration": 0.0,
+        "survival": 0.5,
+        "format": 1.0
+      },
+      "2": {
+        "outcome": 0.0,
+        "calibration": 0.0,
+        "survival": 1.0,
+        "format": 1.0
+      },
+      "3": {
+        "outcome": 0.0,
+        "calibration": 0.5,
+        "survival": 0.25,
+        "format": 1.0
+      },
+      "4": {
+        "outcome": 0.0,
+        "calibration": 1.0,
+        "survival": 0.25,
+        "format": 1.0
+      }
+    }
+  },
+  {
+    "game_idx": 71,
+    "winner": "werewolf",
+    "end_day": 2,
+    "steps": 11,
+    "roles": {
+      "0": "villager",
+      "1": "seer",
+      "2": "villager",
+      "3": "villager",
+      "4": "werewolf"
+    },
+    "alive_at_end": [
+      3,
+      4
+    ],
+    "rewards_per_seat": {
+      "0": {
+        "outcome": 0.0,
+        "calibration": 0.0,
+        "survival": 0.25,
+        "format": 1.0
+      },
+      "1": {
+        "outcome": 0.0,
+        "calibration": 0.5,
+        "survival": 0.25,
+        "format": 1.0
+      },
+      "2": {
+        "outcome": 0.0,
+        "calibration": 0.0,
+        "survival": 0.5,
+        "format": 1.0
+      },
+      "3": {
+        "outcome": 0.0,
+        "calibration": 0.0,
+        "survival": 1.0,
+        "format": 1.0
+      },
+      "4": {
+        "outcome": 1.0,
+        "calibration": 1.0,
+        "survival": 1.0,
+        "format": 1.0
+      }
+    }
+  },
+  {
+    "game_idx": 72,
+    "winner": "werewolf",
+    "end_day": 2,
+    "steps": 12,
+    "roles": {
+      "0": "villager",
+      "1": "villager",
+      "2": "villager",
+      "3": "werewolf",
+      "4": "seer"
+    },
+    "alive_at_end": [
+      0,
+      3
+    ],
+    "rewards_per_seat": {
+      "0": {
+        "outcome": 0.0,
+        "calibration": 0.0,
+        "survival": 1.0,
+        "format": 1.0
+      },
+      "1": {
+        "outcome": 0.0,
+        "calibration": 0.0,
+        "survival": 0.25,
+        "format": 1.0
+      },
+      "2": {
+        "outcome": 0.0,
+        "calibration": 0.5,
+        "survival": 0.25,
+        "format": 1.0
+      },
+      "3": {
+        "outcome": 1.0,
+        "calibration": 1.0,
+        "survival": 1.0,
+        "format": 1.0
+      },
+      "4": {
+        "outcome": 0.0,
+        "calibration": 0.0,
+        "survival": 0.5,
+        "format": 1.0
+      }
+    }
+  },
+  {
+    "game_idx": 73,
+    "winner": "werewolf",
+    "end_day": 2,
+    "steps": 12,
+    "roles": {
+      "0": "villager",
+      "1": "villager",
+      "2": "werewolf",
+      "3": "seer",
+      "4": "villager"
+    },
+    "alive_at_end": [
+      2,
+      4
+    ],
+    "rewards_per_seat": {
+      "0": {
+        "outcome": 0.0,
+        "calibration": 0.5,
+        "survival": 0.25,
+        "format": 1.0
+      },
+      "1": {
+        "outcome": 0.0,
+        "calibration": 0.0,
+        "survival": 0.25,
+        "format": 1.0
+      },
+      "2": {
+        "outcome": 1.0,
+        "calibration": 1.0,
+        "survival": 1.0,
+        "format": 1.0
+      },
+      "3": {
+        "outcome": 0.0,
+        "calibration": 0.0,
+        "survival": 0.5,
+        "format": 1.0
+      },
+      "4": {
+        "outcome": 0.0,
+        "calibration": 0.0,
+        "survival": 1.0,
+        "format": 1.0
+      }
+    }
+  },
+  {
+    "game_idx": 74,
+    "winner": "villager",
+    "end_day": 1,
+    "steps": 10,
+    "roles": {
+      "0": "seer",
+      "1": "villager",
+      "2": "werewolf",
+      "3": "villager",
+      "4": "villager"
+    },
+    "alive_at_end": [
+      0,
+      1,
+      3
+    ],
+    "rewards_per_seat": {
+      "0": {
+        "outcome": 1.0,
+        "calibration": 1.0,
+        "survival": 1.0,
+        "format": 1.0
+      },
+      "1": {
+        "outcome": 1.0,
+        "calibration": 1.0,
+        "survival": 1.0,
+        "format": 1.0
+      },
+      "2": {
+        "outcome": 0.0,
+        "calibration": 1.0,
+        "survival": 0.25,
+        "format": 1.0
+      },
+      "3": {
+        "outcome": 1.0,
+        "calibration": 1.0,
+        "survival": 1.0,
+        "format": 1.0
+      },
+      "4": {
+        "outcome": 1.0,
+        "calibration": 0.5,
+        "survival": 0.25,
+        "format": 1.0
+      }
+    }
+  },
+  {
+    "game_idx": 75,
+    "winner": "werewolf",
+    "end_day": 2,
+    "steps": 12,
+    "roles": {
+      "0": "villager",
+      "1": "villager",
+      "2": "werewolf",
+      "3": "villager",
+      "4": "seer"
+    },
+    "alive_at_end": [
+      1,
+      2
+    ],
+    "rewards_per_seat": {
+      "0": {
+        "outcome": 0.0,
+        "calibration": 0.5,
+        "survival": 0.25,
+        "format": 1.0
+      },
+      "1": {
+        "outcome": 0.0,
+        "calibration": 0.0,
+        "survival": 1.0,
+        "format": 1.0
+      },
+      "2": {
+        "outcome": 1.0,
+        "calibration": 1.0,
+        "survival": 1.0,
+        "format": 1.0
+      },
+      "3": {
+        "outcome": 0.0,
+        "calibration": 0.0,
+        "survival": 0.25,
+        "format": 1.0
+      },
+      "4": {
+        "outcome": 0.0,
+        "calibration": 0.0,
+        "survival": 0.5,
+        "format": 1.0
+      }
+    }
+  },
+  {
+    "game_idx": 76,
+    "winner": "werewolf",
+    "end_day": 2,
+    "steps": 11,
+    "roles": {
+      "0": "villager",
+      "1": "villager",
+      "2": "werewolf",
+      "3": "villager",
+      "4": "seer"
+    },
+    "alive_at_end": [
+      1,
+      2
+    ],
+    "rewards_per_seat": {
+      "0": {
+        "outcome": 0.0,
+        "calibration": 0.0,
+        "survival": 0.25,
+        "format": 1.0
+      },
+      "1": {
+        "outcome": 0.0,
+        "calibration": 0.0,
+        "survival": 1.0,
+        "format": 1.0
+      },
+      "2": {
+        "outcome": 1.0,
+        "calibration": 1.0,
+        "survival": 1.0,
+        "format": 1.0
+      },
+      "3": {
+        "outcome": 0.0,
+        "calibration": 0.0,
+        "survival": 0.5,
+        "format": 1.0
+      },
+      "4": {
+        "outcome": 0.0,
+        "calibration": 0.5,
+        "survival": 0.25,
+        "format": 1.0
+      }
+    }
+  },
+  {
+    "game_idx": 77,
+    "winner": "werewolf",
+    "end_day": 2,
+    "steps": 11,
+    "roles": {
+      "0": "werewolf",
+      "1": "villager",
+      "2": "villager",
+      "3": "seer",
+      "4": "villager"
+    },
+    "alive_at_end": [
+      0,
+      2
+    ],
+    "rewards_per_seat": {
+      "0": {
+        "outcome": 1.0,
+        "calibration": 1.0,
+        "survival": 1.0,
+        "format": 1.0
+      },
+      "1": {
+        "outcome": 0.0,
+        "calibration": 0.0,
+        "survival": 0.5,
+        "format": 1.0
+      },
+      "2": {
+        "outcome": 0.0,
+        "calibration": 0.0,
+        "survival": 1.0,
+        "format": 1.0
+      },
+      "3": {
+        "outcome": 0.0,
+        "calibration": 0.5,
+        "survival": 0.25,
+        "format": 1.0
+      },
+      "4": {
+        "outcome": 0.0,
+        "calibration": 1.0,
+        "survival": 0.25,
+        "format": 1.0
+      }
+    }
+  },
+  {
+    "game_idx": 78,
+    "winner": "werewolf",
+    "end_day": 2,
+    "steps": 12,
+    "roles": {
+      "0": "villager",
+      "1": "villager",
+      "2": "werewolf",
+      "3": "seer",
+      "4": "villager"
+    },
+    "alive_at_end": [
+      2,
+      3
+    ],
+    "rewards_per_seat": {
+      "0": {
+        "outcome": 0.0,
+        "calibration": 0.5,
+        "survival": 0.25,
+        "format": 1.0
+      },
+      "1": {
+        "outcome": 0.0,
+        "calibration": 1.0,
+        "survival": 0.25,
+        "format": 1.0
+      },
+      "2": {
+        "outcome": 1.0,
+        "calibration": 1.0,
+        "survival": 1.0,
+        "format": 1.0
+      },
+      "3": {
+        "outcome": 0.0,
+        "calibration": 0.0,
+        "survival": 1.0,
+        "format": 1.0
+      },
+      "4": {
+        "outcome": 0.0,
+        "calibration": 1.0,
+        "survival": 0.5,
+        "format": 1.0
+      }
+    }
+  },
+  {
+    "game_idx": 79,
+    "winner": "villager",
+    "end_day": 1,
+    "steps": 10,
+    "roles": {
+      "0": "villager",
+      "1": "villager",
+      "2": "villager",
+      "3": "seer",
+      "4": "werewolf"
+    },
+    "alive_at_end": [
+      0,
+      1,
+      2
+    ],
+    "rewards_per_seat": {
+      "0": {
+        "outcome": 1.0,
+        "calibration": 1.0,
+        "survival": 1.0,
+        "format": 1.0
+      },
+      "1": {
+        "outcome": 1.0,
+        "calibration": 1.0,
+        "survival": 1.0,
+        "format": 1.0
+      },
+      "2": {
+        "outcome": 1.0,
+        "calibration": 1.0,
+        "survival": 1.0,
+        "format": 1.0
+      },
+      "3": {
+        "outcome": 1.0,
+        "calibration": 0.5,
+        "survival": 0.25,
+        "format": 1.0
+      },
+      "4": {
+        "outcome": 0.0,
+        "calibration": 1.0,
+        "survival": 0.25,
+        "format": 1.0
+      }
+    }
+  },
+  {
+    "game_idx": 80,
+    "winner": "werewolf",
+    "end_day": 2,
+    "steps": 12,
+    "roles": {
+      "0": "werewolf",
+      "1": "villager",
+      "2": "villager",
+      "3": "seer",
+      "4": "villager"
+    },
+    "alive_at_end": [
+      0,
+      1
+    ],
+    "rewards_per_seat": {
+      "0": {
+        "outcome": 1.0,
+        "calibration": 1.0,
+        "survival": 1.0,
+        "format": 1.0
+      },
+      "1": {
+        "outcome": 0.0,
+        "calibration": 0.0,
+        "survival": 1.0,
+        "format": 1.0
+      },
+      "2": {
+        "outcome": 0.0,
+        "calibration": 0.5,
+        "survival": 0.25,
+        "format": 1.0
+      },
+      "3": {
+        "outcome": 0.0,
+        "calibration": 0.0,
+        "survival": 0.5,
+        "format": 1.0
+      },
+      "4": {
+        "outcome": 0.0,
+        "calibration": 1.0,
+        "survival": 0.25,
+        "format": 1.0
+      }
+    }
+  },
+  {
+    "game_idx": 81,
+    "winner": "werewolf",
+    "end_day": 2,
+    "steps": 11,
+    "roles": {
+      "0": "villager",
+      "1": "seer",
+      "2": "villager",
+      "3": "villager",
+      "4": "werewolf"
+    },
+    "alive_at_end": [
+      2,
+      4
+    ],
+    "rewards_per_seat": {
+      "0": {
+        "outcome": 0.0,
+        "calibration": 0.5,
+        "survival": 0.25,
+        "format": 1.0
+      },
+      "1": {
+        "outcome": 0.0,
+        "calibration": 0.0,
+        "survival": 0.25,
+        "format": 1.0
+      },
+      "2": {
+        "outcome": 0.0,
+        "calibration": 0.0,
+        "survival": 1.0,
+        "format": 1.0
+      },
+      "3": {
+        "outcome": 0.0,
+        "calibration": 0.0,
+        "survival": 0.5,
+        "format": 1.0
+      },
+      "4": {
+        "outcome": 1.0,
+        "calibration": 1.0,
+        "survival": 1.0,
+        "format": 1.0
+      }
+    }
+  },
+  {
+    "game_idx": 82,
+    "winner": "werewolf",
+    "end_day": 2,
+    "steps": 11,
+    "roles": {
+      "0": "seer",
+      "1": "villager",
+      "2": "villager",
+      "3": "werewolf",
+      "4": "villager"
+    },
+    "alive_at_end": [
+      1,
+      3
+    ],
+    "rewards_per_seat": {
+      "0": {
+        "outcome": 0.0,
+        "calibration": 0.5,
+        "survival": 0.25,
+        "format": 1.0
+      },
+      "1": {
+        "outcome": 0.0,
+        "calibration": 0.0,
+        "survival": 1.0,
+        "format": 1.0
+      },
+      "2": {
+        "outcome": 0.0,
+        "calibration": 0.0,
+        "survival": 0.25,
+        "format": 1.0
+      },
+      "3": {
+        "outcome": 1.0,
+        "calibration": 1.0,
+        "survival": 1.0,
+        "format": 1.0
+      },
+      "4": {
+        "outcome": 0.0,
+        "calibration": 0.0,
+        "survival": 0.5,
+        "format": 1.0
+      }
+    }
+  },
+  {
+    "game_idx": 83,
+    "winner": "villager",
+    "end_day": 1,
+    "steps": 10,
+    "roles": {
+      "0": "werewolf",
+      "1": "villager",
+      "2": "villager",
+      "3": "villager",
+      "4": "seer"
+    },
+    "alive_at_end": [
+      2,
+      3,
+      4
+    ],
+    "rewards_per_seat": {
+      "0": {
+        "outcome": 0.0,
+        "calibration": 1.0,
+        "survival": 0.25,
+        "format": 1.0
+      },
+      "1": {
+        "outcome": 1.0,
+        "calibration": 0.5,
+        "survival": 0.25,
+        "format": 1.0
+      },
+      "2": {
+        "outcome": 1.0,
+        "calibration": 1.0,
+        "survival": 1.0,
+        "format": 1.0
+      },
+      "3": {
+        "outcome": 1.0,
+        "calibration": 1.0,
+        "survival": 1.0,
+        "format": 1.0
+      },
+      "4": {
+        "outcome": 1.0,
+        "calibration": 1.0,
+        "survival": 1.0,
+        "format": 1.0
+      }
+    }
+  },
+  {
+    "game_idx": 84,
+    "winner": "werewolf",
+    "end_day": 2,
+    "steps": 11,
+    "roles": {
+      "0": "villager",
+      "1": "seer",
+      "2": "villager",
+      "3": "werewolf",
+      "4": "villager"
+    },
+    "alive_at_end": [
+      0,
+      3
+    ],
+    "rewards_per_seat": {
+      "0": {
+        "outcome": 0.0,
+        "calibration": 0.0,
+        "survival": 1.0,
+        "format": 1.0
+      },
+      "1": {
+        "outcome": 0.0,
+        "calibration": 0.0,
+        "survival": 0.25,
+        "format": 1.0
+      },
+      "2": {
+        "outcome": 0.0,
+        "calibration": 0.0,
+        "survival": 0.5,
+        "format": 1.0
+      },
+      "3": {
+        "outcome": 1.0,
+        "calibration": 1.0,
+        "survival": 1.0,
+        "format": 1.0
+      },
+      "4": {
+        "outcome": 0.0,
+        "calibration": 0.5,
+        "survival": 0.25,
+        "format": 1.0
+      }
+    }
+  },
+  {
+    "game_idx": 85,
+    "winner": "villager",
+    "end_day": 1,
+    "steps": 10,
+    "roles": {
+      "0": "seer",
+      "1": "villager",
+      "2": "villager",
+      "3": "villager",
+      "4": "werewolf"
+    },
+    "alive_at_end": [
+      0,
+      2,
+      3
+    ],
+    "rewards_per_seat": {
+      "0": {
+        "outcome": 1.0,
+        "calibration": 1.0,
+        "survival": 1.0,
+        "format": 1.0
+      },
+      "1": {
+        "outcome": 1.0,
+        "calibration": 0.5,
+        "survival": 0.25,
+        "format": 1.0
+      },
+      "2": {
+        "outcome": 1.0,
+        "calibration": 1.0,
+        "survival": 1.0,
+        "format": 1.0
+      },
+      "3": {
+        "outcome": 1.0,
+        "calibration": 1.0,
+        "survival": 1.0,
+        "format": 1.0
+      },
+      "4": {
+        "outcome": 0.0,
+        "calibration": 1.0,
+        "survival": 0.25,
+        "format": 1.0
+      }
+    }
+  },
+  {
+    "game_idx": 86,
+    "winner": "villager",
+    "end_day": 1,
+    "steps": 10,
+    "roles": {
+      "0": "werewolf",
+      "1": "villager",
+      "2": "villager",
+      "3": "villager",
+      "4": "seer"
+    },
+    "alive_at_end": [
+      2,
+      3,
+      4
+    ],
+    "rewards_per_seat": {
+      "0": {
+        "outcome": 0.0,
+        "calibration": 1.0,
+        "survival": 0.25,
+        "format": 1.0
+      },
+      "1": {
+        "outcome": 1.0,
+        "calibration": 0.5,
+        "survival": 0.25,
+        "format": 1.0
+      },
+      "2": {
+        "outcome": 1.0,
+        "calibration": 0.0,
+        "survival": 1.0,
+        "format": 1.0
+      },
+      "3": {
+        "outcome": 1.0,
+        "calibration": 1.0,
+        "survival": 1.0,
+        "format": 1.0
+      },
+      "4": {
+        "outcome": 1.0,
+        "calibration": 0.0,
+        "survival": 1.0,
+        "format": 1.0
+      }
+    }
+  },
+  {
+    "game_idx": 87,
+    "winner": "werewolf",
+    "end_day": 2,
+    "steps": 12,
+    "roles": {
+      "0": "villager",
+      "1": "seer",
+      "2": "werewolf",
+      "3": "villager",
+      "4": "villager"
+    },
+    "alive_at_end": [
+      2,
+      3
+    ],
+    "rewards_per_seat": {
+      "0": {
+        "outcome": 0.0,
+        "calibration": 1.0,
+        "survival": 0.25,
+        "format": 1.0
+      },
+      "1": {
+        "outcome": 0.0,
+        "calibration": 1.0,
+        "survival": 0.5,
+        "format": 1.0
+      },
+      "2": {
+        "outcome": 1.0,
+        "calibration": 1.0,
+        "survival": 1.0,
+        "format": 1.0
+      },
+      "3": {
+        "outcome": 0.0,
+        "calibration": 0.0,
+        "survival": 1.0,
+        "format": 1.0
+      },
+      "4": {
+        "outcome": 0.0,
+        "calibration": 0.5,
+        "survival": 0.25,
+        "format": 1.0
+      }
+    }
+  },
+  {
+    "game_idx": 88,
+    "winner": "villager",
+    "end_day": 1,
+    "steps": 10,
+    "roles": {
+      "0": "werewolf",
+      "1": "villager",
+      "2": "seer",
+      "3": "villager",
+      "4": "villager"
+    },
+    "alive_at_end": [
+      1,
+      2,
+      3
+    ],
+    "rewards_per_seat": {
+      "0": {
+        "outcome": 0.0,
+        "calibration": 1.0,
+        "survival": 0.25,
+        "format": 1.0
+      },
+      "1": {
+        "outcome": 1.0,
+        "calibration": 1.0,
+        "survival": 1.0,
+        "format": 1.0
+      },
+      "2": {
+        "outcome": 1.0,
+        "calibration": 1.0,
+        "survival": 1.0,
+        "format": 1.0
+      },
+      "3": {
+        "outcome": 1.0,
+        "calibration": 1.0,
+        "survival": 1.0,
+        "format": 1.0
+      },
+      "4": {
+        "outcome": 1.0,
+        "calibration": 0.5,
+        "survival": 0.25,
+        "format": 1.0
+      }
+    }
+  },
+  {
+    "game_idx": 89,
+    "winner": "werewolf",
+    "end_day": 2,
+    "steps": 11,
+    "roles": {
+      "0": "seer",
+      "1": "werewolf",
+      "2": "villager",
+      "3": "villager",
+      "4": "villager"
+    },
+    "alive_at_end": [
+      1,
+      4
+    ],
+    "rewards_per_seat": {
+      "0": {
+        "outcome": 0.0,
+        "calibration": 0.0,
+        "survival": 0.25,
+        "format": 1.0
+      },
+      "1": {
+        "outcome": 1.0,
+        "calibration": 1.0,
+        "survival": 1.0,
+        "format": 1.0
+      },
+      "2": {
+        "outcome": 0.0,
+        "calibration": 0.5,
+        "survival": 0.25,
+        "format": 1.0
+      },
+      "3": {
+        "outcome": 0.0,
+        "calibration": 0.0,
+        "survival": 0.5,
+        "format": 1.0
+      },
+      "4": {
+        "outcome": 0.0,
+        "calibration": 0.0,
+        "survival": 1.0,
+        "format": 1.0
+      }
+    }
+  },
+  {
+    "game_idx": 90,
+    "winner": "werewolf",
+    "end_day": 2,
+    "steps": 11,
+    "roles": {
+      "0": "villager",
+      "1": "werewolf",
+      "2": "villager",
+      "3": "seer",
+      "4": "villager"
+    },
+    "alive_at_end": [
+      0,
+      1
+    ],
+    "rewards_per_seat": {
+      "0": {
+        "outcome": 0.0,
+        "calibration": 0.0,
+        "survival": 1.0,
+        "format": 1.0
+      },
+      "1": {
+        "outcome": 1.0,
+        "calibration": 1.0,
+        "survival": 1.0,
+        "format": 1.0
+      },
+      "2": {
+        "outcome": 0.0,
+        "calibration": 0.0,
+        "survival": 0.5,
+        "format": 1.0
+      },
+      "3": {
+        "outcome": 0.0,
+        "calibration": 0.5,
+        "survival": 0.25,
+        "format": 1.0
+      },
+      "4": {
+        "outcome": 0.0,
+        "calibration": 0.0,
+        "survival": 0.25,
+        "format": 1.0
+      }
+    }
+  },
+  {
+    "game_idx": 91,
+    "winner": "werewolf",
+    "end_day": 2,
+    "steps": 11,
+    "roles": {
+      "0": "werewolf",
+      "1": "villager",
+      "2": "seer",
+      "3": "villager",
+      "4": "villager"
+    },
+    "alive_at_end": [
+      0,
+      3
+    ],
+    "rewards_per_seat": {
+      "0": {
+        "outcome": 1.0,
+        "calibration": 1.0,
+        "survival": 1.0,
+        "format": 1.0
+      },
+      "1": {
+        "outcome": 0.0,
+        "calibration": 0.0,
+        "survival": 0.5,
+        "format": 1.0
+      },
+      "2": {
+        "outcome": 0.0,
+        "calibration": 0.5,
+        "survival": 0.25,
+        "format": 1.0
+      },
+      "3": {
+        "outcome": 0.0,
+        "calibration": 0.0,
+        "survival": 1.0,
+        "format": 1.0
+      },
+      "4": {
+        "outcome": 0.0,
+        "calibration": 0.0,
+        "survival": 0.25,
+        "format": 1.0
+      }
+    }
+  },
+  {
+    "game_idx": 92,
+    "winner": "werewolf",
+    "end_day": 2,
+    "steps": 11,
+    "roles": {
+      "0": "villager",
+      "1": "werewolf",
+      "2": "villager",
+      "3": "seer",
+      "4": "villager"
+    },
+    "alive_at_end": [
+      1,
+      2
+    ],
+    "rewards_per_seat": {
+      "0": {
+        "outcome": 0.0,
+        "calibration": 0.0,
+        "survival": 0.5,
+        "format": 1.0
+      },
+      "1": {
+        "outcome": 1.0,
+        "calibration": 1.0,
+        "survival": 1.0,
+        "format": 1.0
+      },
+      "2": {
+        "outcome": 0.0,
+        "calibration": 0.0,
+        "survival": 1.0,
+        "format": 1.0
+      },
+      "3": {
+        "outcome": 0.0,
+        "calibration": 1.0,
+        "survival": 0.25,
+        "format": 1.0
+      },
+      "4": {
+        "outcome": 0.0,
+        "calibration": 0.5,
+        "survival": 0.25,
+        "format": 1.0
+      }
+    }
+  },
+  {
+    "game_idx": 93,
+    "winner": "werewolf",
+    "end_day": 2,
+    "steps": 11,
+    "roles": {
+      "0": "werewolf",
+      "1": "villager",
+      "2": "seer",
+      "3": "villager",
+      "4": "villager"
+    },
+    "alive_at_end": [
+      0,
+      3
+    ],
+    "rewards_per_seat": {
+      "0": {
+        "outcome": 1.0,
+        "calibration": 1.0,
+        "survival": 1.0,
+        "format": 1.0
+      },
+      "1": {
+        "outcome": 0.0,
+        "calibration": 0.0,
+        "survival": 0.25,
+        "format": 1.0
+      },
+      "2": {
+        "outcome": 0.0,
+        "calibration": 0.5,
+        "survival": 0.25,
+        "format": 1.0
+      },
+      "3": {
+        "outcome": 0.0,
+        "calibration": 0.0,
+        "survival": 1.0,
+        "format": 1.0
+      },
+      "4": {
+        "outcome": 0.0,
+        "calibration": 0.0,
+        "survival": 0.5,
+        "format": 1.0
+      }
+    }
+  },
+  {
+    "game_idx": 94,
+    "winner": "villager",
+    "end_day": 1,
+    "steps": 10,
+    "roles": {
+      "0": "seer",
+      "1": "werewolf",
+      "2": "villager",
+      "3": "villager",
+      "4": "villager"
+    },
+    "alive_at_end": [
+      0,
+      3,
+      4
+    ],
+    "rewards_per_seat": {
+      "0": {
+        "outcome": 1.0,
+        "calibration": 1.0,
+        "survival": 1.0,
+        "format": 1.0
+      },
+      "1": {
+        "outcome": 0.0,
+        "calibration": 1.0,
+        "survival": 0.25,
+        "format": 1.0
+      },
+      "2": {
+        "outcome": 1.0,
+        "calibration": 0.5,
+        "survival": 0.25,
+        "format": 1.0
+      },
+      "3": {
+        "outcome": 1.0,
+        "calibration": 1.0,
+        "survival": 1.0,
+        "format": 1.0
+      },
+      "4": {
+        "outcome": 1.0,
+        "calibration": 1.0,
+        "survival": 1.0,
+        "format": 1.0
+      }
+    }
+  },
+  {
+    "game_idx": 95,
+    "winner": "werewolf",
+    "end_day": 2,
+    "steps": 11,
+    "roles": {
+      "0": "villager",
+      "1": "villager",
+      "2": "villager",
+      "3": "seer",
+      "4": "werewolf"
+    },
+    "alive_at_end": [
+      0,
+      4
+    ],
+    "rewards_per_seat": {
+      "0": {
+        "outcome": 0.0,
+        "calibration": 0.0,
+        "survival": 1.0,
+        "format": 1.0
+      },
+      "1": {
+        "outcome": 0.0,
+        "calibration": 0.0,
+        "survival": 0.5,
+        "format": 1.0
+      },
+      "2": {
+        "outcome": 0.0,
+        "calibration": 0.5,
+        "survival": 0.25,
+        "format": 1.0
+      },
+      "3": {
+        "outcome": 0.0,
+        "calibration": 0.0,
+        "survival": 0.25,
+        "format": 1.0
+      },
+      "4": {
+        "outcome": 1.0,
+        "calibration": 1.0,
+        "survival": 1.0,
+        "format": 1.0
+      }
+    }
+  },
+  {
+    "game_idx": 96,
+    "winner": "villager",
+    "end_day": 1,
+    "steps": 10,
+    "roles": {
+      "0": "werewolf",
+      "1": "villager",
+      "2": "villager",
+      "3": "villager",
+      "4": "seer"
+    },
+    "alive_at_end": [
+      1,
+      2,
+      4
+    ],
+    "rewards_per_seat": {
+      "0": {
+        "outcome": 0.0,
+        "calibration": 1.0,
+        "survival": 0.25,
+        "format": 1.0
+      },
+      "1": {
+        "outcome": 1.0,
+        "calibration": 0.0,
+        "survival": 1.0,
+        "format": 1.0
+      },
+      "2": {
+        "outcome": 1.0,
+        "calibration": 0.0,
+        "survival": 1.0,
+        "format": 1.0
+      },
+      "3": {
+        "outcome": 1.0,
+        "calibration": 0.5,
+        "survival": 0.25,
+        "format": 1.0
+      },
+      "4": {
+        "outcome": 1.0,
+        "calibration": 1.0,
+        "survival": 1.0,
+        "format": 1.0
+      }
+    }
+  },
+  {
+    "game_idx": 97,
+    "winner": "werewolf",
+    "end_day": 2,
+    "steps": 11,
+    "roles": {
+      "0": "seer",
+      "1": "villager",
+      "2": "villager",
+      "3": "villager",
+      "4": "werewolf"
+    },
+    "alive_at_end": [
+      3,
+      4
+    ],
+    "rewards_per_seat": {
+      "0": {
+        "outcome": 0.0,
+        "calibration": 0.0,
+        "survival": 0.25,
+        "format": 1.0
+      },
+      "1": {
+        "outcome": 0.0,
+        "calibration": 0.5,
+        "survival": 0.25,
+        "format": 1.0
+      },
+      "2": {
+        "outcome": 0.0,
+        "calibration": 0.0,
+        "survival": 0.5,
+        "format": 1.0
+      },
+      "3": {
+        "outcome": 0.0,
+        "calibration": 0.0,
+        "survival": 1.0,
+        "format": 1.0
+      },
+      "4": {
+        "outcome": 1.0,
+        "calibration": 1.0,
+        "survival": 1.0,
+        "format": 1.0
+      }
+    }
+  },
+  {
+    "game_idx": 98,
+    "winner": "werewolf",
+    "end_day": 2,
+    "steps": 12,
+    "roles": {
+      "0": "villager",
+      "1": "villager",
+      "2": "seer",
+      "3": "villager",
+      "4": "werewolf"
+    },
+    "alive_at_end": [
+      2,
+      4
+    ],
+    "rewards_per_seat": {
+      "0": {
+        "outcome": 0.0,
+        "calibration": 0.0,
+        "survival": 0.25,
+        "format": 1.0
+      },
+      "1": {
+        "outcome": 0.0,
+        "calibration": 0.5,
+        "survival": 0.25,
+        "format": 1.0
+      },
+      "2": {
+        "outcome": 0.0,
+        "calibration": 0.0,
+        "survival": 1.0,
+        "format": 1.0
+      },
+      "3": {
+        "outcome": 0.0,
+        "calibration": 0.0,
+        "survival": 0.5,
+        "format": 1.0
+      },
+      "4": {
+        "outcome": 1.0,
+        "calibration": 1.0,
+        "survival": 1.0,
+        "format": 1.0
+      }
+    }
+  },
+  {
+    "game_idx": 99,
+    "winner": "villager",
+    "end_day": 1,
+    "steps": 10,
+    "roles": {
+      "0": "villager",
+      "1": "seer",
+      "2": "villager",
+      "3": "werewolf",
+      "4": "villager"
+    },
+    "alive_at_end": [
+      0,
+      2,
+      4
+    ],
+    "rewards_per_seat": {
+      "0": {
+        "outcome": 1.0,
+        "calibration": 0.0,
+        "survival": 1.0,
+        "format": 1.0
+      },
+      "1": {
+        "outcome": 1.0,
+        "calibration": 0.5,
+        "survival": 0.25,
+        "format": 1.0
+      },
+      "2": {
+        "outcome": 1.0,
+        "calibration": 0.0,
+        "survival": 1.0,
+        "format": 1.0
+      },
+      "3": {
+        "outcome": 0.0,
+        "calibration": 1.0,
+        "survival": 0.25,
+        "format": 1.0
+      },
+      "4": {
+        "outcome": 1.0,
+        "calibration": 1.0,
+        "survival": 1.0,
+        "format": 1.0
+      }
+    }
+  }
+]

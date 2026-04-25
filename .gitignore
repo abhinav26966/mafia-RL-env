@@ -1,0 +1,57 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+.venv/
+venv/
+env/
+.env
+*.egg-info/
+dist/
+build/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+
+# Training outputs
+outputs/
+checkpoints/
+*.bin
+*.safetensors
+*.pt
+*.ckpt
+
+# Logs / tracking
+wandb/
+trackio/
+runs/
+mlruns/
+*.log
+
+# Demo artifacts (commit small PNGs/JSON; ignore raw video)
+demo/video/
+demo/*.mp4
+demo/*.mov
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*~
+
+# Notebooks
+.ipynb_checkpoints/
+
+# HF / model cache
+.cache/
+hf_cache/
+~/.cache/huggingface/
+
+# uv
+uv.lock.bak
