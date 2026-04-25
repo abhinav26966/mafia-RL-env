@@ -16,27 +16,92 @@ Notebook usage:
 
 from __future__ import annotations
 
+import importlib.abc as _ila
+import importlib.util as _ilu
 import os
 import sys as _sys
+import types as _types
 from unittest.mock import MagicMock as _MagicMock
 
 # IMPORTANT: set BEFORE importing unsloth, per Unsloth memory-efficient RL guide
 os.environ.setdefault("UNSLOTH_VLLM_STANDBY", "1")
 
-# Stub out mergekit BEFORE any TRL import.
-# TRL >= 0.20's grpo_trainer module unconditionally imports mergekit. Recent
-# mergekit versions define Pydantic models with raw `torch.Tensor` fields,
-# which fails to generate a schema under pydantic >= 2.12. We don't use
-# mergekit's LoRA-merge feature — only the import statement has to succeed.
-# Pre-registering MagicMocks satisfies any `import mergekit.X` or
-# `from mergekit.X import Y` in TRL's code.
-for _mod in [
-    "mergekit", "mergekit.config", "mergekit.merge", "mergekit.options",
-    "mergekit.io", "mergekit.architecture", "mergekit.graph",
-    "mergekit.merge_methods", "mergekit.scripts", "mergekit.tokenizer",
-    "mergekit.plan", "mergekit.common",
-]:
-    _sys.modules.setdefault(_mod, _MagicMock())
+
+# ── TRL optional-deps stub (must run BEFORE any `import trl`) ────────────────
+#
+# TRL >= 0.20's grpo_trainer module unconditionally imports several optional
+# packages (mergekit for LoRA merge, llm_blender for ensemble ranking,
+# liger_kernel for CUDA kernels). We don't use any of those features — only
+# the import has to succeed.
+#
+# Mergekit specifically defines Pydantic models with raw `torch.Tensor`
+# fields which fail under pydantic >= 2.12 even if the package is installed.
+#
+# A meta-path import hook auto-mocks anything under known prefixes. It uses
+# real `types.ModuleType` instances (not MagicMock) so `module.__spec__` is
+# set correctly by importlib — `importlib.util.find_spec` can then read it
+# without a "ValueError: __spec__ is not set". Per-module attribute access
+# falls back to MagicMock via PEP 562's module-level `__getattr__`.
+
+
+class _StubLoader(_ila.Loader):
+    def create_module(self, spec):  # type: ignore[override]
+        m = _types.ModuleType(spec.name)
+        m.__path__ = []  # mark as package — submodule imports keep going
+        # Pre-set common metadata so callers expecting strings don't choke
+        m.__version__ = "0.0.0"
+        m.__author__ = ""
+        m.__file__ = "<stub>"
+        m.__all__: list = []
+
+        def _module_getattr(name):  # PEP 562 fallback
+            # String defaults for metadata dunders — TRL does
+            # `if mod.__version__ >= "0.1"` and a MagicMock comparison
+            # against a string raises TypeError.
+            if name == "__version__":
+                return "0.0.0"
+            if name in ("__author__", "__doc__", "__license__",
+                        "__email__", "__url__"):
+                return ""
+            if name == "__all__":
+                return []
+            return _MagicMock()
+
+        m.__getattr__ = _module_getattr  # type: ignore[attr-defined]
+        return m
+
+    def exec_module(self, module):  # type: ignore[override]
+        pass
+
+
+class _StubFinder(_ila.MetaPathFinder):
+    # Optional packages that TRL's grpo_trainer imports unconditionally.
+    # Add new prefixes here if a fresh Colab run hits a `ModuleNotFoundError`
+    # under the same TRL whack-a-mole pattern.
+    PREFIXES: tuple[str, ...] = (
+        "mergekit",          # LoRA merging
+        "llm_blender",       # PairRanker ensemble
+        "liger_kernel",      # CUDA fused kernels
+        "weave",             # W&B observability
+        "comet_ml",          # tracker
+        "swanlab",           # tracker
+    )
+
+    def find_spec(self, fullname, path=None, target=None):  # type: ignore[override]
+        for prefix in self.PREFIXES:
+            if fullname == prefix or fullname.startswith(prefix + "."):
+                return _ilu.spec_from_loader(fullname, _StubLoader(), is_package=True)
+        return None
+
+
+# Wipe any prior broken entries (e.g., bare MagicMocks left by an earlier shim
+# without a real __spec__). The finder will recreate them properly on import.
+for _k in list(_sys.modules):
+    if any(_k == _p or _k.startswith(_p + ".") for _p in _StubFinder.PREFIXES):
+        del _sys.modules[_k]
+
+if not any(isinstance(_f, _StubFinder) for _f in _sys.meta_path):
+    _sys.meta_path.insert(0, _StubFinder())
 
 
 # ── Compute-tier defaults ────────────────────────────────────────────────────

@@ -17,22 +17,23 @@
 #   !pip install -e .  # installs werewolf_env client
 # ───────────────────────────────────────────────────────────────────────────
 
-# Core training libs
-trl>=0.20
-datasets>=2.18
-accelerate>=0.34
-peft>=0.12
-transformers>=4.45
+# Core training libs — versions pinned to a known-mutually-compatible set.
+# Loosen these only after testing; transformers 5.x and pydantic 2.12 break
+# Unsloth + TRL 0.20 in confusing ways.
+trl==0.20.0
+datasets>=2.18,<3.0
+accelerate==1.0.1
+peft>=0.12,<0.14
+transformers==4.46.3
 # mergekit is imported by trl.trainer.grpo_trainer (LoRA adapter merging path).
 # Recent mergekit versions are incompatible with pydantic >= 2.12 (raw
 # torch.Tensor fields fail Pydantic v2 schema generation). We stub mergekit
 # in training/train_grpo.py at import time, so we don't actually need the
 # package — but installing an old version doesn't hurt as a fallback.
 mergekit
-# Pin pydantic below 2.12 so any package that DID install mergekit cleanly
-# (without the schema error) keeps working. openenv-core / fastapi / trl
-# all work fine on 2.10/2.11.
-pydantic>=2.10,<2.12
+# Pin pydantic explicitly — 2.12+ breaks mergekit's torch.Tensor schemas,
+# 2.11 breaks some internal pydantic calls in our path. 2.10.6 is verified.
+pydantic==2.10.6
 
 # Tracking + plotting
 trackio
