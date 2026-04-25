@@ -23,6 +23,9 @@ datasets>=2.18
 accelerate>=0.34
 peft>=0.12
 transformers>=4.45
+# mergekit is imported by trl.trainer.grpo_trainer (LoRA adapter merging path).
+# Required even if we don't use the merge feature, because the import is unconditional.
+mergekit
 
 # Tracking + plotting
 trackio
