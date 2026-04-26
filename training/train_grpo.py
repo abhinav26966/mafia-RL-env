@@ -26,6 +26,13 @@ from unittest.mock import MagicMock as _MagicMock
 # IMPORTANT: set BEFORE importing unsloth, per Unsloth memory-efficient RL guide
 os.environ.setdefault("UNSLOTH_VLLM_STANDBY", "1")
 
+# Disable Unsloth's source-introspection compiler — it calls
+# `inspect.getsource(Trainer.training_step)` which can fail on Colab with
+# `OSError: could not get source code`. See unslothai/unsloth#1224, #742.
+# Unsloth still applies its model-load optimizations without this compiler.
+os.environ.setdefault("UNSLOTH_COMPILE_DISABLE", "1")
+os.environ.setdefault("UNSLOTH_DISABLE_FAST_GENERATION", "1")
+
 
 # ── TRL optional-deps stub (must run BEFORE any `import trl`) ────────────────
 #
@@ -76,8 +83,10 @@ class _StubLoader(_ila.Loader):
 
 class _StubFinder(_ila.MetaPathFinder):
     # Optional packages that TRL's grpo_trainer imports unconditionally.
-    # Add new prefixes here if a fresh Colab run hits a `ModuleNotFoundError`
-    # under the same TRL whack-a-mole pattern.
+    # NOTE: we do NOT stub `vllm` itself — Unsloth's monkey-patcher needs to
+    # set `__init__` on real vllm classes, which fails on MagicMock. Instead
+    # we let real vllm 0.19+ load and apply a `GuidedDecodingParams` alias
+    # at the end of this file (see _apply_vllm_shim).
     PREFIXES: tuple[str, ...] = (
         "mergekit",          # LoRA merging
         "llm_blender",       # PairRanker ensemble
@@ -85,6 +94,7 @@ class _StubFinder(_ila.MetaPathFinder):
         "weave",             # W&B observability
         "comet_ml",          # tracker
         "swanlab",           # tracker
+        "vllm_ascend",       # Huawei NPU plugin (irrelevant on CUDA)
     )
 
     def find_spec(self, fullname, path=None, target=None):  # type: ignore[override]
@@ -102,6 +112,34 @@ for _k in list(_sys.modules):
 
 if not any(isinstance(_f, _StubFinder) for _f in _sys.meta_path):
     _sys.meta_path.insert(0, _StubFinder())
+
+
+def _apply_vllm_shim() -> None:
+    """Alias `vllm.sampling_params.GuidedDecodingParams` to its renamed
+    successor `StructuredOutputsParams` (vllm 0.12+). TRL 0.20 imports the
+    old name unconditionally; this lets the import succeed without needing
+    to stub all of vllm.
+
+    Falls back to a dummy class if vllm has neither name (defense in depth)."""
+    try:
+        import vllm.sampling_params as _vsp
+    except Exception:  # pragma: no cover  — vllm not installed at all
+        return
+    if hasattr(_vsp, "GuidedDecodingParams"):
+        return  # already there (older vllm)
+    new_cls = getattr(_vsp, "StructuredOutputsParams", None)
+    if new_cls is not None:
+        _vsp.GuidedDecodingParams = new_cls
+        return
+
+    class _GuidedDecodingParamsShim:  # last-resort stub
+        def __init__(self, *args, **kwargs):
+            pass
+
+    _vsp.GuidedDecodingParams = _GuidedDecodingParamsShim
+
+
+_apply_vllm_shim()
 
 
 # ── Compute-tier defaults ────────────────────────────────────────────────────
@@ -167,11 +205,18 @@ def run_training(
     print(f"[train] profile={profile.name} model={model_id} n_games={n_games} url={url}")
 
     # ── Load model + LoRA ────────────────────────────────────────────────────
+    # NOTE: fast_inference=False (no vLLM colocate). Reason:
+    # TRL 0.20.0 imports `GuidedDecodingParams` from vLLM, which only exists
+    # in vLLM <0.12. vLLM <0.12 is built against torch 2.8 and breaks with
+    # Colab's torch 2.10 (C++ ABI mismatch). Until TRL ships a version that
+    # uses `StructuredOutputsParams` (the new vLLM name), we go without vLLM
+    # colocate and use HF transformers.generate for rollouts. Slower but
+    # actually works on current Colab.
     model, tokenizer = FastLanguageModel.from_pretrained(
         model_name=model_id,
         max_seq_length=profile.max_seq_length,
         load_in_4bit=True,
-        fast_inference=True,                 # vLLM colocate
+        fast_inference=False,
         gpu_memory_utilization=profile.gpu_memory_utilization,
     )
     model = FastLanguageModel.get_peft_model(

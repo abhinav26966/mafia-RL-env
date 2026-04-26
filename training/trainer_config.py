@@ -47,7 +47,13 @@ A100_PROFILE = HardwareProfile(
 
 
 def build_config(output_dir: str, profile: HardwareProfile = T4_PROFILE):
-    """Phase 4: returns a GRPOConfig. Stub here so import works without TRL."""
+    """Returns a GRPOConfig.
+
+    NOTE: vLLM is intentionally disabled. TRL 0.20.0's `GuidedDecodingParams`
+    import is incompatible with vLLM 0.12+, and vLLM <0.12 is incompatible
+    with Colab's torch 2.10. We use HF transformers.generate via the
+    rollout function instead — slower but actually works.
+    """
     from trl import GRPOConfig
 
     return GRPOConfig(
@@ -63,9 +69,7 @@ def build_config(output_dir: str, profile: HardwareProfile = T4_PROFILE):
         logging_steps=1,
         save_steps=50,
         eval_steps=50,
-        use_vllm=True,
-        vllm_mode="colocate",
-        vllm_gpu_memory_utilization=profile.gpu_memory_utilization,
+        use_vllm=False,
         report_to=["trackio"],
         seed=42,
     )
